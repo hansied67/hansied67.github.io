@@ -12,9 +12,9 @@ export default function SiteNav() {
 
     const  navItems = [
         { name: "Home", href: "/" },
-        { name: "Bio", href: "/" },
-        { name: "Projects", href: "/" },
-        { name: "Contact", href: "/" },
+        { name: "Bio", href: "/bio" },
+        { name: "Projects", href: "/projects" },
+        { name: "Contact", href: "/contact" },
     ];
 
     /*useEffect(() => {
