@@ -21,19 +21,18 @@ export default function ThemeToggle() {
             document.documentElement.style.setProperty('--foreground', '#ededed')
         }
         setTheme(!theme);
-        console.log(theme);
     }
 
     return (
-        <button className="" onClick={toggleTheme}>
-            <Image
-            className="opacity-80 hover:opacity-100"
-            src="/worm_foreground.png"
-            alt="Dark/Light mode toggle"
-            width={64}
-            height={64}
-            priority
-            />
-        </button>
+      <button className="" onClick={toggleTheme}>
+        <Image
+        className="opacity-80 hover:opacity-100"
+        src="/worm_foreground.png"
+        alt="Dark/Light mode toggle"
+        width={64}
+        height={64}
+        priority
+        />
+      </button>
     )
 }
