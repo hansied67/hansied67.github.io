@@ -5,7 +5,7 @@ import Image from "next/image";
 
 
 //TODO: Change sprite on click. Easy implementation, make new worm sprite?
-export default function ThemeToggle() {
+export default function ThemeToggle(props: { className: string | undefined; }) {
     const [theme, setTheme] = useState(false);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function ThemeToggle() {
     }
 
     return (
-      <button className="" onClick={toggleTheme}>
+      <button className={props.className} onClick={toggleTheme}>
         <Image
         className="opacity-80 hover:opacity-100"
         src="/worm_foreground.png"
