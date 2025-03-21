@@ -17,17 +17,18 @@ export default function SiteNav() {
         { name: "Contact", href: "/contact" },
     ];
 
-    /*useEffect(() => {
-        setPage("/");
-        console.log(page);
-        console.log(navItems);
-    }, [page, navItems])*/
-
     return (
       <nav className="fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <div className="flex flex-1 items-center">
-            <Image className="mx-2" src="/Bob Ross.png" alt="32x32 pixel art of lakeside mountains" width={64} height={64} priority />
+            <Image
+              className="mx-2"
+              src="/Bob Ross.png"
+              alt="32x32 pixel art of lakeside mountains"
+              width={64}
+              height={64}
+              priority
+            />
             <div className="">
               <span className="mx-2 self-center text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
               <div className="mx-2 self-center text-xs font-semibold whitespace-nowrap">Software Developer, Consultant</div>
