@@ -23,7 +23,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         setTheme(!isDark);
     }
 
-    const darkButton = <button className={props.className} onClick={toggleTheme}>
+    const darkButton = <button onClick={toggleTheme}>
       <Image
         className="opacity-80 hover:opacity-100"
         src="/worm_foreground.png"
@@ -33,7 +33,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         priority
       />
     </button>
-    const lightButton = <button className={props.className} onClick={toggleTheme}>
+    const lightButton = <button onClick={toggleTheme}>
     <Image
       className="opacity-80 hover:opacity-100"
       src="/flower.png"
@@ -45,6 +45,8 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
   </button>
 
     return (
-        isDark ? darkButton : lightButton
+        <div className={props.className}>
+          {isDark ? darkButton : lightButton}
+        </div>
     )
 }
