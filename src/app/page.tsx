@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 
 export default function Home() {
@@ -18,8 +17,6 @@ export default function Home() {
         height={256}
         unoptimized
         />
-      </main>
-      <footer className="row-start-3 items-center justify-center">
         <div className="flex gap-[24px] flex-wrap justify-center">
           <Image
           aria-hidden
@@ -43,39 +40,7 @@ export default function Home() {
           height={64}
           />
         </div>
-        <div className="text-center">Made with&nbsp;
-          <Link
-          className="text-blue-600 hover:text-gray-400 visited:text-purple-600"
-          href="https://nextjs.org/"
-          target="_blank"
-          rel="noopener noreferrer">
-            Next.js
-          </Link>
-          &nbsp;using&nbsp;
-          <Link
-          className="text-blue-600 hover:text-[#61DBFB] visited:text-purple-600"
-          href="https://tailwindcss.com/"
-          target="_blank"
-          rel="noopener noreferrer">
-            Tailwind CSS
-          </Link>
-          <br />
-          Assets made with&nbsp;
-          <Link
-          className="text-blue-500 hover:text-cyan-100 visited:text-purple-600"
-          href="https://www.aseprite.org/"
-          target="_blank">
-            Aseprite
-          </Link>
-          &nbsp;by&nbsp;
-          <Link
-          className="text-blue-600 hover:text-green-500 visited:text-purple-600"
-          href="https://www.linkedin.com/in/hdurchholz/"
-          target="_blank">
-            Hans Durchholz :)
-          </Link>
-        </div>
-      </footer>
+      </main>
     </div>
   );
 }
