@@ -33,7 +33,7 @@ export default function SiteNav() {
               <div className="mx-2 self-center text-xs font-semibold whitespace-nowrap">Software Developer, Consultant</div>
             </div>
           </div>
-          <div className="flex flex-1 justify-around">
+          <div className="flex flex-2 justify-around">
             {navItems.map((item, index) => (
               <div
                 key={index}

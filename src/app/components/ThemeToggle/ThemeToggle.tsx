@@ -6,33 +6,45 @@ import Image from "next/image";
 
 //TODO: Change sprite on click. Easy implementation, make new worm sprite?
 export default function ThemeToggle(props: { className: string | undefined; }) {
-    const [theme, setTheme] = useState(false);
+    const [isDark, setTheme] = useState(false);
 
     useEffect(() => {
         setTheme(window.matchMedia("(prefers-color-scheme:dark)").matches)
     }, [])
 
     function toggleTheme() {
-        if (theme) {
+        if (isDark) {
             document.documentElement.style.setProperty('--background', '#ededed')
             document.documentElement.style.setProperty('--foreground', '#0a0a0a')
         } else {
             document.documentElement.style.setProperty('--background', '#0a0a0a')
             document.documentElement.style.setProperty('--foreground', '#ededed')
         }
-        setTheme(!theme);
+        setTheme(!isDark);
     }
 
-    return (
-      <button className={props.className} onClick={toggleTheme}>
-        <Image
+    const darkButton = <button className={props.className} onClick={toggleTheme}>
+      <Image
         className="opacity-80 hover:opacity-100"
         src="/worm_foreground.png"
-        alt="Dark/Light mode toggle"
+        alt="Light mode toggle"
         width={64}
         height={64}
         priority
-        />
-      </button>
+      />
+    </button>
+    const lightButton = <button className={props.className} onClick={toggleTheme}>
+    <Image
+      className="opacity-80 hover:opacity-100"
+      src="/flower.png"
+      alt="Dark mode toggle"
+      width={64}
+      height={64}
+      priority
+    />
+  </button>
+
+    return (
+        isDark ? darkButton : lightButton
     )
 }
