@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <div className="text-center">Made with&nbsp;
           <Link
-          className="text-blue-600 hover:bg-text:blue-600 visited:text-purple-600"
+          className="text-blue-600 hover:text-gray-400 visited:text-purple-600"
           href="https://nextjs.org/"
           target="_blank"
           rel="noopener noreferrer">
@@ -63,7 +63,7 @@ export default function Home() {
           <br />
           Assets made with&nbsp;
           <Link
-          className="text-blue-500 hover:text-green-500 visited:text-purple-600"
+          className="text-blue-500 hover:text-cyan-100 visited:text-purple-600"
           href="https://www.aseprite.org/"
           target="_blank">
             Aseprite
