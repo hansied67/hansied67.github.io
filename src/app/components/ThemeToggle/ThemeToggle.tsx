@@ -16,9 +16,11 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         if (isDark) {
             document.documentElement.style.setProperty('--background', '#ededed')
             document.documentElement.style.setProperty('--foreground', '#0a0a0a')
+            document.documentElement.style.setProperty('--background-image', `url("/site-bg-light.png")`)
         } else {
             document.documentElement.style.setProperty('--background', '#0a0a0a')
             document.documentElement.style.setProperty('--foreground', '#ededed')
+            document.documentElement.style.setProperty('--background-image', `url("/site-bg.png")`)
         }
         setTheme(!isDark);
     }

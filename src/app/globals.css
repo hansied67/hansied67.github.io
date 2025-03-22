@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #ededed;
   --foreground: #171717;
+  --background-image: url("/site-bg-light.png");
 }
 
 @theme inline {
@@ -16,11 +17,14 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --background-image: url("/site-bg.png");
   }
 }
 
 body {
   background: var(--background);
+  background-image: var(--background-image);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-blend-mode: difference
 }
