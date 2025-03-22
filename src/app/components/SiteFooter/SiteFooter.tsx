@@ -37,7 +37,7 @@ export default function SiteFooter() {
                   &nbsp;by&nbsp;
                   <Link
                   className="text-blue-500 hover:text-green-500 visited:text-purple-500"
-                  href="https://www.linkedin.com/in/hdurchholz/"
+                  href="https://bsky.app/profile/grunchyhands.bsky.social"
                   target="_blank">
                       Hans Durchholz :)
                   </Link>
