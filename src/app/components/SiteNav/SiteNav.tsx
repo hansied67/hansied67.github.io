@@ -18,7 +18,7 @@ export default function SiteNav() {
     ];
 
     return (
-      <nav className="fixed w-full z-20 top-0 start-0">
+      <nav className="fixed w-full z-20 top-0 start-0 backdrop-blur">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <div className="flex flex-1 items-center">
             <Image

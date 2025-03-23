@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function SiteFooter() {
     return(
-        <footer className="fixed w-full bottom-0 items-center justify-center p-1">
+        <footer className="fixed w-full bottom-0 items-center justify-center backdrop-blur">
           <div className="max-w-screen-xl flex items-center justify-between mx-auto">
             <div className="flex flex-1" />
             <div className="flex flex-2 justify-center">
