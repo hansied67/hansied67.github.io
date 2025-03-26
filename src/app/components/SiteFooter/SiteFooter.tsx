@@ -15,7 +15,7 @@ export default function SiteFooter() {
             <div className="flex flex-2 justify-center">
               <div className="text-center justify-items-center">Made with&nbsp;
                   <Link
-                  className="mix-blend-difference text-orange-500 hover:text-gray-400 visited:text-purple-500"
+                  className="text-yellow-500 hover:text-gray-400 visited:text-amber-500"
                   href="https://nextjs.org/"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -23,7 +23,7 @@ export default function SiteFooter() {
                   </Link>
                   &nbsp;using&nbsp;
                   <Link
-                  className="text-orange-500 hover:text-[#61DBFB] visited:text-purple-500"
+                  className="text-yellow-500 hover:text-[#61DBFB] visited:text-amber-500"
                   href="https://tailwindcss.com/"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -32,14 +32,14 @@ export default function SiteFooter() {
                   <br />
                   Assets made with&nbsp;
                   <Link
-                  className="text-orange-500 hover:text-cyan-100 visited:text-purple-500"
+                  className="text-yellow-500 hover:text-cyan-100 visited:text-amber-500"
                   href="https://www.aseprite.org/"
                   target="_blank">
                       Aseprite
                   </Link>
                   &nbsp;by&nbsp;
                   <Link
-                  className="text-orange-500 hover:text-green-500 visited:text-purple-500"
+                  className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
                   href="https://bsky.app/profile/grunchyhands.bsky.social"
                   target="_blank">
                       Hans Durchholz :)

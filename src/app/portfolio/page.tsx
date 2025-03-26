@@ -14,7 +14,7 @@ export default function Portfolio() {
                     <h2 className="italic text-lg">
                       A discord bot written in python interfacing with
                       <Link
-                        className="text-orange-500 hover:text-green-500 visited:text-purple-500"
+                        className="text-yellow-500 hover:text-blue-500 visited:text-amber-500"
                         href="https://crashteamranking.com/nftttable/"
                         target="_blank">
                           &nbsp;Crash Team Ranking
