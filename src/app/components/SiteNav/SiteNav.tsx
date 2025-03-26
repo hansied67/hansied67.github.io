@@ -3,12 +3,15 @@
 // import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 
 // Custom Navbar component for easy refactoring
 export default function SiteNav() {
     // const [page, setPage] = useState("");
+
+    const pathname = usePathname();
 
     const  navItems = [
         { name: "Home", href: "/" },
@@ -34,19 +37,17 @@ export default function SiteNav() {
               <div className="mx-2 self-center text-xs font-semibold italic whitespace-nowrap">Software Developer, Consultant</div>
             </div>
           </div>
-          <div className="flex flex-2 justify-around">
+          <div className="flex flex-2 justify-end">
             {navItems.map((item, index) => (
               <div
                 key={index}
-                className="text-lg"
+                className="flex justify-end"
               >
-                <Link href={item.href} className="">
-                  {item.name}
-                </Link>
+                {item.href != pathname ? <Link href={item.href} className="text-lg ml-6 p-2 hover:text-orange-500">{item.name}</Link> : <span className="text-lg font-bold italic ml-6 p-2 text-orange-500">{item.name}</span>}
+                
               </div>
             ))}
           </div>
-          <ThemeToggle className="flex flex-1 justify-end"/>
         </div>
       </nav>
     )
