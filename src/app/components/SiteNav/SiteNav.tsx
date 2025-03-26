@@ -13,12 +13,12 @@ export default function SiteNav() {
     const  navItems = [
         { name: "Home", href: "/" },
         { name: "Bio", href: "/bio" },
-        { name: "Projects", href: "/projects" },
+        { name: "Portfolio", href: "/portfolio" },
         { name: "Contact", href: "/contact" },
     ];
 
     return (
-      <nav className="fixed w-full z-20 top-0 start-0 backdrop-blur">
+      <nav className="fixed w-full z-20 top-0 start-0 backdrop-blur bg-opacity-30">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <div className="flex flex-1 items-center">
             <Image
@@ -31,7 +31,7 @@ export default function SiteNav() {
             />
             <div className="">
               <span className="mx-2 self-center text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
-              <div className="mx-2 self-center text-xs font-semibold whitespace-nowrap">Software Developer, Consultant</div>
+              <div className="mx-2 self-center text-xs font-semibold italic whitespace-nowrap">Software Developer, Consultant</div>
             </div>
           </div>
           <div className="flex flex-2 justify-around">

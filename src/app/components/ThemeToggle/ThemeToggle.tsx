@@ -20,7 +20,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         } else {
             document.documentElement.style.setProperty('--background', '#0a0a0a')
             document.documentElement.style.setProperty('--foreground', '#ededed')
-            document.documentElement.style.setProperty('--background-image', `url("/site-bg.png")`)
+            document.documentElement.style.setProperty('--background-image', `url("/site-bg-dark.png")`)
         }
         setTheme(!isDark);
     }
