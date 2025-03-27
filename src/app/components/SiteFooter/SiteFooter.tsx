@@ -3,19 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import TextToggle from "../TextToggle/TextToggle";
 
 
 export default function SiteFooter() {
     return(
-        <footer className="fixed w-full bottom-0 items-center justify-center backdrop-blur">
-          <div className="max-w-screen-xl flex items-center justify-between mx-auto">
-            <div className="flex flex-1">
+        <footer className="fixed w-full bottom-0 items-stretch backdrop-blur">
+          <div className="max-w-screen-xl flex mx-auto">
             <ThemeToggle className="flex flex-1"/>
-            </div>
             <div className="flex flex-2 justify-center flex-col">
               <div className="text-center justify-items-center">Made with&nbsp;
                 <Link
-                className="text-yellow-500 hover:text-gray-400 visited:text-amber-500"
+                className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -23,7 +22,7 @@ export default function SiteFooter() {
                 </Link>
                 &nbsp;using&nbsp;
                 <Link
-                className="text-yellow-500 hover:text-[#61DBFB] visited:text-amber-500"
+                className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
                 href="https://tailwindcss.com/"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -32,7 +31,7 @@ export default function SiteFooter() {
               </div>
               <div className="text-center justify-items-center">Assets made with&nbsp;
                 <Link
-                className="text-yellow-500 hover:text-cyan-100 visited:text-amber-500"
+                className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
                 href="https://www.aseprite.org/"
                 target="_blank">
                     Aseprite
@@ -68,15 +67,7 @@ export default function SiteFooter() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-1 justify-end">
-                <Image
-                aria-hidden
-                src="/worm_foreground.png"
-                alt="Worm 3"
-                width={64}
-                height={64}
-                />
-            </div>
+            <TextToggle className="flex flex-1 justify-end"/>
           </div>
         </footer>
     )

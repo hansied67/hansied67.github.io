@@ -4,7 +4,7 @@ import CustomCarousel from "../components/CustomCarousel/CustomCarousel";
 
 export default function Portfolio() {
     return (
-        <div className="light grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <div className="light grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
           <main className="flex flex-col gap-[32px] row-start-2">
             <div className="flex flex-row gap-[32px] border-2 rounded-xl p-2">
               <div className="flex flex-3 py-2 pl-2">
