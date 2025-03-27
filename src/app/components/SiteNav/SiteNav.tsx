@@ -4,12 +4,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
 
 
 // Custom Navbar component for easy refactoring
 export default function SiteNav() {
-    // const [page, setPage] = useState("");
 
     const pathname = usePathname();
 
@@ -34,7 +32,7 @@ export default function SiteNav() {
             />
             <div className="">
               <span className="mx-2 self-center text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
-              <div className="mx-2 self-center text-xs font-semibold italic whitespace-nowrap">Software Developer, Consultant</div>
+              <div className="mx-2 self-center text-sm whitespace-nowrap">Software Developer, Consultant</div>
             </div>
           </div>
           <div className="flex flex-2 justify-end">
@@ -43,8 +41,7 @@ export default function SiteNav() {
                 key={index}
                 className="flex justify-end"
               >
-                {item.href != pathname ? <Link href={item.href} className="text-lg ml-6 p-2 hover:text-yellow-500">{item.name}</Link> : <span className="text-lg font-bold italic ml-6 p-2 text-yellow-500">{item.name}</span>}
-                
+                {item.href != pathname ? <Link href={item.href} className="text-lg ml-6 p-2 hover:text-yellow-500">{item.name}</Link> : <span className="text-lg font-bold ml-6 p-2 text-yellow-500">{item.name}</span>}  
               </div>
             ))}
           </div>

@@ -9,9 +9,9 @@ export default function Portfolio() {
             <div className="flex flex-row gap-[32px] border-2 rounded-xl p-2">
               <div className="flex flex-3 py-2 pl-2">
                 <div className="flex flex-col">
-                  <h1 className="font-bold underline text-6xl">CTRBot</h1>
+                  <h1 className="font-bold text-6xl">CTRBot</h1>
                   <div className="my-auto">
-                    <h2 className="italic text-lg">
+                    <h2 className="text-lg">
                       A discord bot written in python interfacing with
                       <Link
                         className="text-yellow-500 hover:text-blue-500 visited:text-amber-500"

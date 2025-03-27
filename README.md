@@ -32,5 +32,10 @@ npm install
 npm run dev
 ```
 
+# Acknowledgements
+This website uses the great [Chevy Ray](https://chevyray.dev/)'s font [Banter](https://chevyray.itch.io/pixel-font-banter), available in their [Pixel Font Megapack!](https://chevyray.itch.io/pixel-font-megapack).
+
+The aforementioned use of Licensed Content falls under fair use, adhering to the [Pixel Font License Agreement](https://raw.githubusercontent.com/ChevyRay/pixel_font_megapack_license/main/LICENSE.txt).
+
 # License
 This project is licensed under the terms of the [MIT license](https://github.com/hansied67/hans-durchholz-dot-com/blob/main/LICENSE).

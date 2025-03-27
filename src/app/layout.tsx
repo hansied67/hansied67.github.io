@@ -1,19 +1,36 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 //import localFont from "next/font/local";
 import "./globals.css";
 import SiteNav from "./components/SiteNav/SiteNav";
 import SiteFooter from "./components/SiteFooter/SiteFooter";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+/* Banter & Banter Bold fonts by Chevy Ray: https://chevyray.itch.io/pixel-font-banter */
+/* License: https://raw.githubusercontent.com/ChevyRay/pixel_font_megapack_license/main/LICENSE.txt */
+const banter = localFont({
+  src: [
+    {
+      path: "../../public/fonts/banter.ttf",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/banter_bold.ttf",
+      style: "bold",
+    },
+  ],
+  variable: "--font-banter",
+})
 
 // const pixelFont = localFont({
 //   src: "",
@@ -86,7 +103,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${banter.className} ${geistMono.variable} antialiased`}
       >
         <SiteNav />
         {children}
