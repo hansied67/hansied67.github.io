@@ -32,7 +32,7 @@ export default function Portfolio() {
                   </h2>
                 </div>
               </div>
-              <CustomCarousel className="border-1 rounded-lg w-1/2 mx-auto">
+              <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2 w-1/2 mx-auto">
                 <Image src="/CTRBot SC1.png" alt="" width={300} height={0} className="m-auto h-full"/>
                 <Image src="/CTRBot SC2.png" alt="" width={300} height={0} className="m-auto h-full"/>
               </CustomCarousel>
@@ -64,7 +64,7 @@ export default function Portfolio() {
                   </h2>
                 </div>
               </div>
-              <CustomCarousel className="border-1 rounded-lg w-1/2 mx-auto">
+              <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2 w-1/2 mx-auto">
                 <Image src="/GlassBridge.png" alt="" width={300} height={0} className="m-auto h-full"/>
                 <Image src="/Frog.gif" alt="TODO: temp, fill all alt text!" width={300} height={0} className="m-auto h-full"/>
               </CustomCarousel>
