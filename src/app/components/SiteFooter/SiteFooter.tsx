@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import TextToggle from "../TextToggle/TextToggle";
@@ -8,10 +7,10 @@ import TextToggle from "../TextToggle/TextToggle";
 
 export default function SiteFooter() {
     return(
-        <footer className="fixed w-full bottom-0 items-stretch backdrop-blur">
+        <footer className="md:fixed w-full bottom-0 items-stretch backdrop-blur">
           <div className="max-w-screen-xl flex mx-auto">
-            <ThemeToggle className="flex flex-1"/>
-            <div className="flex flex-2 justify-center flex-col">
+            <ThemeToggle className="flex flex-2"/>
+            <div className="flex flex-6 justify-center flex-col text-xs md:text-base">
               <div className="text-center justify-items-center">Made with&nbsp;
                 <Link
                 className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
@@ -26,10 +25,9 @@ export default function SiteFooter() {
                 href="https://tailwindcss.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                    Tailwind CSS
+                    Tailwind CSS.
                 </Link>
-              </div>
-              <div className="text-center justify-items-center">Assets made with&nbsp;
+                &nbsp;Assets made with&nbsp;
                 <Link
                 className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
                 href="https://www.aseprite.org/"
@@ -67,7 +65,7 @@ export default function SiteFooter() {
                 </Link>
               </div>
             </div>
-            <TextToggle className="flex flex-1 justify-end"/>
+            <TextToggle className="flex flex-2 justify-end"/>
           </div>
         </footer>
     )
