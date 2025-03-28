@@ -1,6 +1,6 @@
 export default function Bio() {
     return (
-        <div className="light grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
+        <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
           <main className="flex flex-col gap-[32px] row-start-2">
             <div className="flex flex-wrap justify-around gap-8">
               <div className="flex flex-2 text-2xl text-end">

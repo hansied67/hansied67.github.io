@@ -4,9 +4,9 @@ import CustomCarousel from "../components/CustomCarousel/CustomCarousel";
 
 export default function Portfolio() {
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
+        <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 gap-16 sm:p-20">
           <main className="flex flex-col gap-[32px] row-start-2">
-            <div className="flex flex-col lg:flex-row gap-[32px] border-2 shadow-lg rounded-xl p-2">
+            <div className="flex flex-col lg:flex-row gap-2 border-2 shadow-lg rounded-xl p-2">
               <div className="flex py-2 pl-2">
                 <div className="flex flex-col">
                   <h1 className="font-bold text-lg lg:text-6xl">CTRBot</h1>
@@ -37,7 +37,7 @@ export default function Portfolio() {
                 <Image src="/CTRBot SC2.png" alt="" width={300} height={0} className="m-auto h-full"/>
               </CustomCarousel>
             </div>
-            <div className="flex flex-col lg:flex-row gap-[32px] border-2 shadow-lg rounded-xl p-2">
+            <div className="flex flex-col lg:flex-row gap-2 border-2 shadow-lg rounded-xl p-2">
               {/* TODO: Fill out the rest of these entries! Get a good selfie dummy! */}
               <div className="flex py-2 pl-2">
                 <div className="flex flex-col">
