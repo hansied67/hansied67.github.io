@@ -40,6 +40,26 @@ export default function Home() {
           height={64}
           />
         </div>
+        <div className="flex flex-col lg:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl">
+          <Image
+          src="/Heidi1.jpg"
+          alt="Hans's dog Heidi, fast asleep on a bed"
+          width={400}
+          height={400}
+          />
+          <Image
+          src="/HeidiHans.jpg"
+          alt="Hans with his adorable dog Heidi"
+          width={400}
+          height={400}
+          />
+          <Image
+          src="/Heidi2.jpg"
+          alt="Hans's dog Heidi being pet while on her doggy bed"
+          width={400}
+          height={400}
+          />
+        </div>
       </main>
     </div>
   );
