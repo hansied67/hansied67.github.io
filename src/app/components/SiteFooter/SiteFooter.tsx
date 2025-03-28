@@ -9,7 +9,7 @@ export default function SiteFooter() {
     return(
         <footer className="md:fixed w-full bottom-0 items-stretch backdrop-blur">
           <div className="max-w-screen-xl flex mx-auto">
-            <ThemeToggle className="flex flex-2"/>
+            <ThemeToggle className="flex flex-2 justify-end"/>
             <div className="flex flex-6 justify-center flex-col text-xs lg:text-base">
               <div className="text-center justify-items-center">Made with&nbsp;
                 <Link
@@ -65,7 +65,7 @@ export default function SiteFooter() {
                 </Link>
               </div>
             </div>
-            <TextToggle className="flex flex-2 justify-end"/>
+            <TextToggle className="flex flex-2"/>
           </div>
         </footer>
     )

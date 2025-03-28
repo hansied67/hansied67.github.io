@@ -27,7 +27,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
 
     const darkButton = <button onClick={toggleTheme}>
       <Image
-        className="opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-md"
+        className="opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-2xl"
         src="/Moon.png"
         alt="Light mode toggle"
         width={64}
@@ -37,7 +37,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
     </button>
     const lightButton = <button onClick={toggleTheme}>
     <Image
-      className="opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-md"
+      className="opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-2xl"
       src="/Sun.png"
       alt="Dark mode toggle"
       width={64}

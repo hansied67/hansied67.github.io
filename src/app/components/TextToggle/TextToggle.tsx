@@ -20,7 +20,7 @@ export default function TextToggle(props: { className: string | undefined; }) {
 
     return (
         <div className={props.className}>
-            <button onClick={toggleFont} className="self-center opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-md text-xl w-[64px] h-[64px]">
+            <button onClick={toggleFont} className="self-center opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-2xl text-xl w-[64px] h-[64px]">
                 Aa
             </button>
         </div>
