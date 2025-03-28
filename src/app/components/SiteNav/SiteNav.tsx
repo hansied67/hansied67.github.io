@@ -23,7 +23,7 @@ export default function SiteNav() {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <div className="flex flex-1 items-center">
             <Image
-              className="mx-2 size-[48px] md:size-[64px]"
+              className="mx-2 size-[48px] lg:size-[64px]"
               src="/Bob Ross.png"
               alt="32x32 pixel art of lakeside mountains"
               width={64}
@@ -31,8 +31,8 @@ export default function SiteNav() {
               priority
             />
             <div className="">
-              <span className="mx-2 self-center text-base md:text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
-              <div className="mx-2 self-center text-sm md:text-base whitespace-nowrap">Software Developer, Consultant</div>
+              <span className="mx-2 self-center text-base lg:text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
+              <div className="mx-2 self-center text-sm lg:text-base whitespace-nowrap">Software Developer, Consultant</div>
             </div>
           </div>
           <div className="flex flex-2 justify-end">
@@ -41,7 +41,7 @@ export default function SiteNav() {
                 key={index}
                 className="flex justify-end"
               >
-                {item.href != pathname ? <Link href={item.href} className="text-sm md:text-lg ml-6 p-2 hover:text-yellow-500">{item.name}</Link> : <span className="text-sm md:text-lg font-bold ml-6 p-2 text-yellow-500">{item.name}</span>}  
+                {item.href != pathname ? <Link href={item.href} className="text-sm lg:text-lg ml-6 p-2 hover:text-yellow-500">{item.name}</Link> : <span className="text-sm lg:text-lg font-bold ml-6 p-2 text-yellow-500">{item.name}</span>}  
               </div>
             ))}
           </div>

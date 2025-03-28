@@ -10,7 +10,7 @@ export default function SiteFooter() {
         <footer className="md:fixed w-full bottom-0 items-stretch backdrop-blur">
           <div className="max-w-screen-xl flex mx-auto">
             <ThemeToggle className="flex flex-2"/>
-            <div className="flex flex-6 justify-center flex-col text-xs md:text-base">
+            <div className="flex flex-6 justify-center flex-col text-xs lg:text-base">
               <div className="text-center justify-items-center">Made with&nbsp;
                 <Link
                 className="text-yellow-500 hover:text-green-500 visited:text-amber-500"

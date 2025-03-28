@@ -9,8 +9,8 @@ export default function Portfolio() {
             <div className="flex flex-col lg:flex-row gap-[32px] border-2 shadow-lg rounded-xl p-2">
               <div className="flex py-2 pl-2">
                 <div className="flex flex-col">
-                  <h1 className="font-bold text-lg md:text-6xl">CTRBot</h1>
-                  <h2 className="text-sm md:text-2xl">
+                  <h1 className="font-bold text-lg lg:text-6xl">CTRBot</h1>
+                  <h2 className="text-sm lg:text-2xl">
                       A discord bot written in python interfacing with
                       <Link
                         className="text-yellow-500 hover:text-blue-500 visited:text-amber-500"
@@ -22,7 +22,7 @@ export default function Portfolio() {
                       <br /><br />
                     </h2>
                   <div className="flex mt-auto">
-                    <h2 className="text-sm md:text-lg">
+                    <h2 className="text-sm lg:text-lg">
                       This bot was a collaborative project with my friends to be used by other friends! We spun up a Python bot, made an API to hook-up to the site&apos;s back-end, and hosted the server on Linux.
                       <br />
                       CTRBot exists to streamline the Crash Team Ranking user experience by replacing the site&apos;s UI functionalities with command-based ones. This provides efficiency, reliability, and the ability to perform several site functions concurrently. Furthermore, this bot contains custom functionality such as track generation and custom track pools, to further act as a general-use competitive tool.
