@@ -5,9 +5,10 @@ import Image from "next/image";
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
 
 interface PortfolioProps {
-  children: React.ReactNode,
   className: string | undefined,
   title: string,
+  subtitle: React.ReactElement,
+  description: React.ReactElement,
   carouselImages: Array<{ src: string, alt: string }>
 }
 
@@ -21,7 +22,8 @@ export default function PortfolioEntry(
           <div className="flex py-2 pl-2">
             <div className="flex flex-col">
             <h1 className="font-bold text-lg lg:text-6xl">{props.title}</h1>
-              {props.children}
+            <h2 className="text-sm lg:text-2xl">{props.subtitle}</h2>
+            <h2 className="flex mt-auto text-sm lg:text-lg overflow-auto">{props.description}</h2>
             </div>
           </div>
           <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2 w-1/2 mx-auto">
