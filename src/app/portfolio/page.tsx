@@ -15,7 +15,6 @@ export default function Portfolio() {
               <h2 className="text-sm lg:text-2xl">
                   A discord bot written in python interfacing with
                   <Link
-                    className="text-yellow-500 hover:text-blue-500 visited:text-amber-500"
                     href="https://crashteamranking.com/nftttable/"
                     target="_blank">
                       &nbsp;Crash Team Ranking
@@ -43,8 +42,7 @@ export default function Portfolio() {
               <h2 className="text-sm lg:text-2xl">
                   A Progressive Web Application coded in ReactJS, CSS, and a flask back-end, hosted via heroku (now out of commission). This was a cross-platform game based on the popular Netflix series
                   <Link
-                    className="text-yellow-500 hover:text-blue-500 visited:text-amber-500"
-                    href="https://crashteamranking.com/nftttable/"
+                    href="https://www.netflix.com/title/81040344"
                     target="_blank">
                       &nbsp;Squid Game
                   </Link>

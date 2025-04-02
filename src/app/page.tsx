@@ -38,23 +38,11 @@ export default function Home() {
             I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!
             <br />
             Learn more in my
-            <Link
-            className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
-            href="/bio">
-                &nbsp;extended bio
-            </Link>
+            <Link href="/bio">&nbsp;extended bio</Link>
             ,
-            <Link
-            className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
-            href="/portfolio">
-                &nbsp;portfolio
-            </Link>
+            <Link href="/portfolio">&nbsp;portfolio</Link>
             , and
-            <Link
-            className="text-yellow-500 hover:text-green-500 visited:text-amber-500"
-            href="/bio">
-                &nbsp;additional contact information
-            </Link>
+            <Link href="/contact">&nbsp;additional contact information</Link>
             &nbsp;pages!
           </h2>
           <div className="grid grid-cols-1 justify-items-center">

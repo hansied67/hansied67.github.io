@@ -41,7 +41,7 @@ export default function SiteNav() {
                 key={index}
                 className="flex justify-end"
               >
-                {item.href != pathname ? <Link href={item.href} className="text-sm lg:text-lg ml-6 p-2 hover:text-yellow-500 hover:bg-(--color-background)/50 rounded-lg">{item.name}</Link> : <span className="text-sm lg:text-lg font-bold ml-6 p-2 text-yellow-500">{item.name}</span>}  
+                {item.href != pathname ? <Link href={item.href} className="site-nav text-sm lg:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">{item.name}</Link> : <span className="site-nav text-sm lg:text-lg font-bold ml-6 p-2 text-amber-500">{item.name}</span>}  
               </div>
             ))}
           </div>

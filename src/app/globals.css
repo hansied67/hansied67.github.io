@@ -33,3 +33,9 @@ body {
   /* background-blend-mode: difference; */
   background-size: cover;
 }
+
+@layer base {
+  a:not(.site-nav) {
+    @apply text-amber-500 hover:text-green-500
+  }
+}
