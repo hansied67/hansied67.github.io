@@ -30,8 +30,8 @@ export default function Portfolio() {
               While the bot is now out of commission due to an inactive community, this was a very fun and fulfilling project. I love collaborating and making useful tools!
             </span>}
             carouselImages={[
-              { src: "/CTRBot SC1.png", alt: "dasdas" },
-              { src: "/CTRBot SC2.png", alt: "asdfjk" },
+              { src: "/CTRBot SC1.png", alt: "A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation adhering to custom pools. The user inputs '.p bs'. The bot outputs an image of 8 tracks with their names using CTR's font, stacked horizontally." },
+              { src: "/CTRBot SC2.png", alt: "A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top 10 player times per track. The user inputs '.lap10 inferno', and the bot outputs an embedded message detailing the 10 fastest lap times for the track Inferno Island. The embedded message contains a hyperlink to the track's leaderboard on CrashTeamRanking.com, a hyperlink to CrashTeamRanking.com's home page via its icon, and 10 embedded messages for each player's time. Said embeds contain: position, username, country flag, engine type (icon), lap time hyperlinked to its Youtube URL, platform (icon), and a link to the user's CrashTeamRanking profile." },
             ]} />
             <PortfolioEntry
             className=""
@@ -58,7 +58,7 @@ export default function Portfolio() {
               Finally, I managed all the bells and whistles pertinent to our scope, including internal/external metadata, documentation, responsive design, video production for remote presentation, etc.
             </span>}
             carouselImages={[
-              { src: "/GlassBridge.png", alt:"jkllkj" },
+              { src: "/GlassBridge.png", alt:"Icon for Glass Bridge Memory Game. Text font is cyan with a pink shadow, rendered in a font resembling the one used in Netflix's hit show. Black Background." },
               { src: "/Frog.gif", alt:"frog" }
             ]} />
           </main>

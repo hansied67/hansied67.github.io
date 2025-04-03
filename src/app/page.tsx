@@ -53,7 +53,7 @@ export default function Home() {
               <Image
               className=""
               src="/worm_foreground.png"
-              alt="64x64 frog pixel art gif made in Aseprite"
+              alt="64x64 worm on string pixel art made in Aseprite"
               width={256}
               height={256}
               unoptimized
@@ -67,19 +67,19 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
             <Image
             src="/Heidi1.jpg"
-            alt="Hans's dog Heidi, fast asleep on a bed"
+            alt="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
             width={400}
             height={400}
             />
             <Image
             src="/HeidiHans.jpg"
-            alt="Hans with his adorable dog Heidi"
+            alt="Hans with his adorable dog Heidi, a German Shepherd Mix with fawn and brindle fur."
             width={400}
             height={400}
             />
             <Image
             src="/Heidi2.jpg"
-            alt="Hans's dog Heidi being pet while on her doggy bed"
+            alt="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is being pet while on her doggy bed, eyes glowing from the camera's flash."
             width={400}
             height={400}
             />

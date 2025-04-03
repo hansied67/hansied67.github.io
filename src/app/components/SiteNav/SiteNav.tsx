@@ -25,7 +25,7 @@ export default function SiteNav() {
             <Image
               className="mx-1 mt-1 md:mb-1 size-[48px] lg:size-[64px]"
               src="/Bob Ross.png"
-              alt="32x32 pixel art of lakeside mountains"
+              alt="32x32 pixel art of lakeside mountains made by Hans in Aseprite."
               width={64}
               height={64}
               priority
