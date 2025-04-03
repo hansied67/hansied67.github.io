@@ -69,19 +69,22 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
             <Image
             src="/Heidi1.jpg"
-            alt="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
+            title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
+            alt="Heidi Dog 1"
             width={400}
             height={400}
             />
             <Image
             src="/HeidiHans.jpg"
-            alt="Hans with his adorable dog Heidi, a German Shepherd Mix with fawn and brindle fur."
+            title="Hans with his adorable dog Heidi, a German Shepherd Mix with fawn and brindle fur."
+            alt="Hans & his dog Heidi"
             width={400}
             height={400}
             />
             <Image
             src="/Heidi2.jpg"
-            alt="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is being pet while on her doggy bed, eyes glowing from the camera's flash."
+            title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is being pet while on her doggy bed, eyes glowing from the camera's flash."
+            alt="Heidi Dog 2"
             width={400}
             height={400}
             />
