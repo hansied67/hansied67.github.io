@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import PortfolioEntry from "../components/PortfolioEntry/PortfolioEntry";
 
 export default function Portfolio() {
@@ -28,11 +29,26 @@ export default function Portfolio() {
               This bot was beta tested and utilized by hundreds of members of competitive CTR communities within discord. I led the development team of 2 other developers, teaching them Git, Python, Linux Operations, JSON, the works!
               <br />
               While the bot is now out of commission due to an inactive community, this was a very fun and fulfilling project. I love collaborating and making useful tools!
-            </span>}
-            carouselImages={[
-              { src: "/CTRBot SC1.png", alt: "A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation adhering to custom pools. The user inputs '.p bs'. The bot outputs an image of 8 tracks with their names using CTR's font, stacked horizontally." },
-              { src: "/CTRBot SC2.png", alt: "A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top 10 player times per track. The user inputs '.lap10 inferno', and the bot outputs an embedded message detailing the 10 fastest lap times for the track Inferno Island. The embedded message contains a hyperlink to the track's leaderboard on CrashTeamRanking.com, a hyperlink to CrashTeamRanking.com's home page via its icon, and 10 embedded messages for each player's time. Said embeds contain: position, username, country flag, engine type (icon), lap time hyperlinked to its Youtube URL, platform (icon), and a link to the user's CrashTeamRanking profile." },
-            ]} />
+            </span>}>
+              <Image
+              src="/CTRBot SC1.png"
+              title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation adhering to custom pools. The user inputs '.p bs'. The bot outputs an image of 8 tracks with their names using CTR's font, stacked horizontally."
+              alt="Discord Screenshot - CTRBot track command"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              />
+              <Image
+              src="/CTRBot SC2.png"
+              title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top 10 player times per track. The user inputs '.lap10 inferno', and the bot outputs an embedded message detailing the 10 fastest lap times for the track Inferno Island. The embedded message contains a hyperlink to the track's leaderboard on CrashTeamRanking.com, a hyperlink to CrashTeamRanking.com's home page via its icon, and 10 embedded messages for each player's time. Said embeds contain: position, username, country flag, engine type (icon), lap time hyperlinked to its Youtube URL, platform (icon), and a link to the user's CrashTeamRanking profile."
+              alt="Discord Screenshot - CTRBot record commands"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              />
+              </PortfolioEntry>
             <PortfolioEntry
             className=""
             title="Glass Bridge Memory Game"
@@ -56,11 +72,26 @@ export default function Portfolio() {
               I also set up a manifest and service workers in order for our game to be a Progressive Web App. This allowed our users to pin the site to their home screens like a normal app, and play offline with local high scores.
               <br />
               Finally, I managed all the bells and whistles pertinent to our scope, including internal/external metadata, documentation, responsive design, video production for remote presentation, etc.
-            </span>}
-            carouselImages={[
-              { src: "/GlassBridge.png", alt:"Icon for Glass Bridge Memory Game. Text font is cyan with a pink shadow, rendered in a font resembling the one used in Netflix's hit show. Black Background." },
-              { src: "/Frog.gif", alt:"frog" }
-            ]} />
+            </span>}>
+              <Image
+              src="/GlassBridge.png"
+              title="Icon for Glass Bridge Memory Game. Text font is cyan with a pink shadow, rendered in a font resembling the one used in Netflix's hit show. Black Background."
+              alt="Glass Bridge Icon"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              />
+              <Image
+              src="/Frog.gif"
+              title="64x64 frog pixel art gif made by Hans in Aseprite"
+              alt="Frog pixel art animation"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              />
+          </PortfolioEntry>
           </main>
         </div>
     );
