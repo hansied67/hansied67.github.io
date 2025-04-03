@@ -20,7 +20,8 @@ export default function Home() {
               <Image
               className=""
               src="/Frog.gif"
-              alt="64x64 frog pixel art gif made in Aseprite"
+              title="64x64 frog pixel art gif made by Hans in Aseprite"
+              alt="Frog pixel art animation"
               width={256}
               height={256}
               unoptimized
@@ -53,7 +54,8 @@ export default function Home() {
               <Image
               className=""
               src="/worm_foreground.png"
-              alt="64x64 worm on string pixel art made in Aseprite"
+              title="64x64 'worm on string' pixel art made by Hans in Aseprite"
+              alt="Worm pixel art"
               width={256}
               height={256}
               unoptimized
