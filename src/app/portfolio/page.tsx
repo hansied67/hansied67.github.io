@@ -56,30 +56,30 @@ export default function Portfolio() {
               src="/DiceRoller1.gif"
               title="D&D Dice Roller showcase"
               alt="D&D app gif"
-              width={0}
+              width={250}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="mx-auto"
               unoptimized
               />
               <Image
               src="/DiceRoller2.gif"
               title="D&D Dice Roller: Custom Roller showcase"
               alt="D&D app custom roller gif"
-              width={0}
+              width={250}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="mx-auto"
               unoptimized
               />
               <Image
               src="/DiceRoller3.png"
-              title="D&D Dice Roller: History showcase"
+              title="D&D Dice Roller: History showcase "
               alt="D&D app history"
-              width={0}
+              width={250}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="mx-auto"
               />
             </PortfolioEntry>
             <PortfolioEntry
@@ -121,19 +121,19 @@ export default function Portfolio() {
               src="/CTRBot SC1.png"
               title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation adhering to custom pools. The user inputs '.p bs'. The bot outputs an image of 8 tracks with their names using CTR's font, stacked horizontally."
               alt="Discord Screenshot - CTRBot track command"
-              width={0}
+              width={400}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="mx-auto"
               />
               <Image
               src="/CTRBot SC2.png"
               title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top 10 player times per track. The user inputs '.lap10 inferno', and the bot outputs an embedded message detailing the 10 fastest lap times for the track Inferno Island. The embedded message contains a hyperlink to the track's leaderboard on CrashTeamRanking.com, a hyperlink to CrashTeamRanking.com's home page via its icon, and 10 embedded messages for each player's time. Said embeds contain: position, username, country flag, engine type (icon), lap time hyperlinked to its Youtube URL, platform (icon), and a link to the user's CrashTeamRanking profile."
               alt="Discord Screenshot - CTRBot record commands"
-              width={0}
+              width={400}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="mx-auto"
               />
             </PortfolioEntry>
             <PortfolioEntry
