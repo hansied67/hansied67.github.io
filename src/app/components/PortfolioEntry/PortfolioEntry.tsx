@@ -6,9 +6,9 @@ import CustomCarousel from "../CustomCarousel/CustomCarousel";
 interface PortfolioProps {
   children: React.ReactNode,
   className: string | undefined,
-  title: string,
-  subtitle: React.ReactElement,
-  description: React.ReactElement,
+  title: string | React.ReactElement,
+  subtitle: string | React.ReactElement,
+  description: string | React.ReactElement,
 }
 
 

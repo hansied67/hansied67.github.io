@@ -8,16 +8,81 @@ export default function Portfolio() {
           <main className="flex flex-col gap-[32px] row-start-2">
             <PortfolioEntry
             className=""
+            title={
+            <span>
+              <Link
+              href="https://hansied67.github.io/flutter_dice_roller"
+              target="_blank">
+                D&D Dice Roller
+              </Link>
+            </span>}
+            subtitle={
+            <span>
+              A cross-platform, mobile-first app written in&nbsp;
+              <Link
+              href="https://flutter.dev/"
+              target="_blank">
+                Flutter
+              </Link>.
+              <br /><br />
+            </span>}
+            description={
+            <span>
+              This was an app I made for a friend! They were dissatisfied with the customization available in other popular free dice roller apps.
+              <br />
+              The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek, professional Material design and custom assets. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling! One of my favorite pet projects for this reason!
+              <br />
+              Primarily used for&nbsp;
+              <Link
+              href="https://company.wizards.com/"
+              target="_blank">
+                Wizards of the Coast&apos;s
+              </Link>
+              &nbsp; properties:&nbsp;
+              <Link
+              href="https://dnd.wizards.com/"
+              target="_blank">
+                Dungeons & Dragons
+              </Link>
+              &nbsp;and&nbsp;
+              <Link
+              href="https://magic.wizards.com/"
+              target="_blank">
+                Magic: The Gathering
+              </Link>.
+            </span>}
+            >
+              <Image
+              src="/GlassBridge.png"
+              title="Icon for Glass Bridge Memory Game. Text font is cyan with a pink shadow, rendered in a font resembling the one used in Netflix's hit show. Black Background."
+              alt="Glass Bridge Icon"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              />
+              <Image
+              src="/Frog.gif"
+              title="64x64 frog pixel art gif made by Hans in Aseprite"
+              alt="Frog pixel art animation"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              />
+            </PortfolioEntry>
+            <PortfolioEntry
+            className=""
             title="CTRBot"
             subtitle={
             <span>
               A discord bot written in python interfacing with
               <Link
-                href="https://crashteamranking.com/nftttable/"
-                target="_blank">
-                  &nbsp;Crash Team Ranking
+              href="https://crashteamranking.com/nftttable/"
+              target="_blank">
+                &nbsp;Crash Team Ranking&apos;s
               </Link>
-              &apos;s back-end, a tool for Crash Team Racing: Nitro Fueled.
+              &nbsp;back-end, a tool for Crash Team Racing: Nitro Fueled.
               <br /><br />
             </span>}
             description={
@@ -48,7 +113,7 @@ export default function Portfolio() {
               sizes="100vw"
               className="w-full h-full"
               />
-              </PortfolioEntry>
+            </PortfolioEntry>
             <PortfolioEntry
             className=""
             title="Glass Bridge Memory Game"
@@ -56,9 +121,9 @@ export default function Portfolio() {
             <span>
               A Progressive Web Application coded in ReactJS, CSS, and a flask back-end, hosted via heroku (now out of commission). This was a cross-platform game based on the popular Netflix series
               <Link
-                href="https://www.netflix.com/title/81040344"
-                target="_blank">
-                  &nbsp;Squid Game
+              href="https://www.netflix.com/title/81040344"
+              target="_blank">
+                &nbsp;Squid Game
               </Link>
               .
               <br /><br />
