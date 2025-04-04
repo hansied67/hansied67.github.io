@@ -38,7 +38,7 @@ export default function Portfolio() {
               target="_blank">
                 Wizards of the Coast&apos;s
               </Link>
-              &nbsp; properties:&nbsp;
+              &nbsp;properties:&nbsp;
               <Link
               href="https://dnd.wizards.com/"
               target="_blank">
@@ -53,18 +53,29 @@ export default function Portfolio() {
             </span>}
             >
               <Image
-              src="/GlassBridge.png"
-              title="Icon for Glass Bridge Memory Game. Text font is cyan with a pink shadow, rendered in a font resembling the one used in Netflix's hit show. Black Background."
-              alt="Glass Bridge Icon"
+              src="/DiceRoller1.gif"
+              title="D&D Dice Roller showcase"
+              alt="D&D app gif"
               width={0}
               height={0}
               sizes="100vw"
               className="w-full h-full"
+              unoptimized
               />
               <Image
-              src="/Frog.gif"
-              title="64x64 frog pixel art gif made by Hans in Aseprite"
-              alt="Frog pixel art animation"
+              src="/DiceRoller2.gif"
+              title="D&D Dice Roller: Custom Roller showcase"
+              alt="D&D app custom roller gif"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+              unoptimized
+              />
+              <Image
+              src="/DiceRoller3.png"
+              title="D&D Dice Roller: History showcase"
+              alt="D&D app history"
               width={0}
               height={0}
               sizes="100vw"
@@ -78,11 +89,22 @@ export default function Portfolio() {
             <span>
               A discord bot written in python interfacing with
               <Link
-              href="https://crashteamranking.com/nftttable/"
+              href="https://crashteamranking.com/"
               target="_blank">
                 &nbsp;Crash Team Ranking&apos;s
               </Link>
-              &nbsp;back-end, a tool for Crash Team Racing: Nitro Fueled.
+              &nbsp;back-end, a tool for&nbsp;
+              <Link
+              href="https://www.crashbandicoot.com/crashteamracing"
+              target="_blank">
+                Activision
+              </Link>
+              &apos;s&nbsp;
+              <Link
+              href="https://www.crashbandicoot.com/crashteamracing"
+              target="_blank">
+                Crash Team Racing: Nitro Fueled
+              </Link>.
               <br /><br />
             </span>}
             description={
@@ -155,6 +177,7 @@ export default function Portfolio() {
               height={0}
               sizes="100vw"
               className="w-full h-full"
+              unoptimized
               />
           </PortfolioEntry>
           </main>
