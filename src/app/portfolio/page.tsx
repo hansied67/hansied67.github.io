@@ -18,7 +18,7 @@ export default function Portfolio() {
             </span>}
             subtitle={
             <span>
-              A cross-platform, mobile-first app written in&nbsp;
+              A cross-platform, mobile-first app made with&nbsp;
               <Link
               href="https://flutter.dev/"
               target="_blank">
@@ -31,6 +31,8 @@ export default function Portfolio() {
               This was an app I made for a friend! They were dissatisfied with the customization available in other popular free dice roller apps.
               <br />
               The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek, professional Material design and custom assets. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling! One of my favorite pet projects for this reason!
+              <br />
+              This was my first foray into mobile app development. It was available on Google Play Store for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality and a learning experience, anyway.
               <br />
               Primarily used for&nbsp;
               <Link
