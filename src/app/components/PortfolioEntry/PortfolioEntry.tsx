@@ -25,7 +25,7 @@ export default function PortfolioEntry(
               <h2 className="flex mt-auto text-sm lg:text-xl overflow-auto">{props.description}</h2>
             </div>
           </div>
-          <div className="w-3/4 lg:w-1/2">
+          <div className="w-3/4 lg:w-1/2 mx-auto">
             <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2">
               {props.children}
             </CustomCarousel>
