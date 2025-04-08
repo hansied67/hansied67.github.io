@@ -132,15 +132,17 @@ export default function Portfolio() {
               <br />
               While the bot is now out of commission due to an inactive community, this was a very fun and fulfilling project. I love collaborating and making useful tools!
             </span>}>
-              <Image
-              src="/CTRBot SC1.png"
-              title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
-              alt="Discord Screenshot - CTRBot track command"
-              width={400}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              />
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/CTRBot SC1.png"
+                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
+                alt="Discord Screenshot - CTRBot track command"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
               <Image
               src="/CTRBot SC2.png"
               title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
@@ -207,24 +209,34 @@ export default function Portfolio() {
               <br />
               Finally, I managed all the bells and whistles pertinent to our scope, including internal/external metadata, documentation, responsive design, and video production for remote presentation.
             </span>}>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                  src="/GlassBridgeTitleScreen.png"
+                  title="Glass Bridge Memory Game - Title Screen. Black background with pink interactive elements and a white title. The font is similar to Squid Game's title card font."
+                  alt="Glass Bridge Memory Game - Title Screen"
+                  width={400}
+                  height={0}
+                  sizes="100vw"
+                  className="mx-auto"
+                />
+              </div>
               <Image
-              src="/GlassBridge.png"
-              title="Icon for Glass Bridge Memory Game. Text font is cyan with a pink shadow, rendered in a font resembling the one used in Netflix's hit show. Black Background."
-              alt="Glass Bridge Icon"
-              width={0}
+              src="/GlassBridgeGameScreen.png"
+              title="Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
+              alt="Glass Bridge Memory Game - Game Screen"
+              width={400}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="mx-auto"
               />
               <Image
-              src="/Frog.gif"
-              title="64x64 frog pixel art gif made by Hans in Aseprite"
-              alt="Frog pixel art animation"
-              width={0}
+              src="/GlassBridgeLoginDialogue.png"
+              title="Glass Bridge Memory Game - Login Dialogue. This Material UI dialogue is a form for creating or logging into an account, making API calls to our Flask/Heroku back-end for validation."
+              alt="Glass Bridge Memory Game - Login Dialogue"
+              width={400}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
-              unoptimized
+              className="mx-auto"
               />
           </PortfolioEntry>
           </main>
