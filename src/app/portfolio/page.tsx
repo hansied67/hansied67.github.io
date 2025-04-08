@@ -99,62 +99,6 @@ export default function Portfolio() {
             </PortfolioEntry>
             <PortfolioEntry
             className=""
-            title="CTRBot"
-            subtitle={
-            <span>
-              A discord bot written in python interfacing with
-              <Link
-              href="https://crashteamranking.com/"
-              target="_blank">
-                &nbsp;Crash Team Ranking&apos;s
-              </Link>
-              &nbsp;back-end, a tool for&nbsp;
-              <Link
-              href="https://www.crashbandicoot.com/crashteamracing"
-              target="_blank">
-                Activision
-              </Link>
-              &apos;s&nbsp;
-              <Link
-              href="https://www.crashbandicoot.com/crashteamracing"
-              target="_blank">
-                Crash Team Racing: Nitro Fueled
-              </Link>.
-              <br /><br />
-            </span>}
-            description={
-            <span>
-              This bot was a collaborative project with my friends to be used by other friends! We spun up a Python bot, made an API to hook-up to the site&apos;s back-end, and hosted the server on Linux.
-              <br />
-              CTRBot exists to streamline the Crash Team Ranking user experience by replacing the site&apos;s UI functionalities with command-based ones, as well as adding custom filtering options. This provides efficiency, reliability, and the ability to perform several site functions concurrently. Furthermore, this bot contains custom functionality such as track generation and custom track pools, to further act as a general-use competitive tool.
-              <br />
-              This bot was beta tested and utilized by hundreds of members of competitive CTR communities within discord. I led the development team of 2 other developers, teaching them Git, Python, Linux Operations, JSON, the works!
-              <br />
-              While the bot is now out of commission due to an inactive community, this was a very fun and fulfilling project. I love collaborating and making useful tools!
-            </span>}>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/CTRBot SC1.png"
-                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
-                alt="Discord Screenshot - CTRBot track command"
-                width={400}
-                height={0}
-                sizes="100vw"
-                className="mx-auto"
-                />
-              </div>
-              <Image
-              src="/CTRBot SC2.png"
-              title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
-              alt="Discord Screenshot - CTRBot record commands"
-              width={400}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              />
-            </PortfolioEntry>
-            <PortfolioEntry
-            className=""
             title="Glass Bridge Memory Game"
             subtitle={
             <span>
@@ -209,17 +153,6 @@ export default function Portfolio() {
               <br />
               Finally, I managed all the bells and whistles pertinent to our scope, including internal/external metadata, documentation, responsive design, and video production for remote presentation.
             </span>}>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                  src="/GlassBridgeTitleScreen.png"
-                  title="Glass Bridge Memory Game - Title Screen. Black background with pink interactive elements and a white title. The font is similar to Squid Game's title card font."
-                  alt="Glass Bridge Memory Game - Title Screen"
-                  width={400}
-                  height={0}
-                  sizes="100vw"
-                  className="mx-auto"
-                />
-              </div>
               <Image
               src="/GlassBridgeGameScreen.png"
               title="Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
@@ -238,7 +171,63 @@ export default function Portfolio() {
               sizes="100vw"
               className="mx-auto"
               />
-          </PortfolioEntry>
+            </PortfolioEntry>
+            <PortfolioEntry
+            className=""
+            title="CTRBot"
+            subtitle={
+            <span>
+              A discord bot written in python interfacing with
+              <Link
+              href="https://crashteamranking.com/"
+              target="_blank">
+                &nbsp;Crash Team Ranking&apos;s
+              </Link>
+              &nbsp;back-end, a tool for&nbsp;
+              <Link
+              href="https://www.crashbandicoot.com/crashteamracing"
+              target="_blank">
+                Activision
+              </Link>
+              &apos;s&nbsp;
+              <Link
+              href="https://www.crashbandicoot.com/crashteamracing"
+              target="_blank">
+                Crash Team Racing: Nitro Fueled
+              </Link>.
+              <br /><br />
+            </span>}
+            description={
+            <span>
+              This bot was a collaborative project with my friends to be used by other friends! We spun up a Python bot, made an API to hook-up to the site&apos;s back-end, and hosted the server on Linux.
+              <br />
+              CTRBot exists to streamline the Crash Team Ranking user experience by replacing the site&apos;s UI functionalities with command-based ones, as well as adding custom filtering options. This provides efficiency, reliability, and the ability to perform several site functions concurrently. Furthermore, this bot contains custom functionality such as track generation and custom track pools, to further act as a general-use competitive tool.
+              <br />
+              This bot was beta tested and utilized by hundreds of members of competitive CTR communities within discord. I led the development team of 2 other developers, teaching them Git, Python, Linux Operations, JSON, the works!
+              <br />
+              While the bot is now out of commission due to an inactive community, this was a very fun and fulfilling project. I love collaborating and making useful tools!
+            </span>}>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/CTRBot SC1.png"
+                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
+                alt="Discord Screenshot - CTRBot track command"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
+              <Image
+              src="/CTRBot SC2.png"
+              title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
+              alt="Discord Screenshot - CTRBot record commands"
+              width={400}
+              height={0}
+              sizes="100vw"
+              className="mx-auto"
+              />
+            </PortfolioEntry>
           </main>
         </div>
     );
