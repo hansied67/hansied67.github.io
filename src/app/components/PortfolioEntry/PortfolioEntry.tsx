@@ -22,8 +22,8 @@ export default function PortfolioEntry(
           <div className="flex flex-row py-2 pl-2">
             <div className="flex flex-col">
               <h1 className="font-bold text-lg lg:text-6xl">{props.title}</h1>
-              <h2 className="text-xs lg:text-lg text-[var(--foreground)]/80"><b>{props.dates}</b></h2>
               <h2 className="text-sm lg:text-2xl">{props.subtitle}</h2>
+              <h2 className="text-xs lg:text-lg text-[var(--foreground)]/80"><b>{props.dates}</b></h2>
               <h2 className="flex mt-auto text-sm lg:text-xl overflow-auto">{props.description}</h2>
             </div>
           </div>
