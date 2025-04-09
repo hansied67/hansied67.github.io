@@ -29,23 +29,15 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://hansdurchholz.com/PROS logo.png",
-        width: 128,
-        height: 128,
       },
       {
         url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
-        width: 128,
-        height: 128,
       },
       {
-        url: "https://hansdurchholz.com/DiceRoller1.gif",
-        width: 128,
-        height: 128,
+        url: "https://hansdurchholz.com/DiceRollerImage",
       },
       {
         url: "https://hansdurchholz.com/CTRBot SC1.png",
-        width: 128,
-        height: 128,
       },
     ],
     locale: "en_US",
