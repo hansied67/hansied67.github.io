@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "hansdurchholz.com",
     images: [
       {
-        url: "https://hansdurchholz.com/HomeSC.png",
+        url: "https://hansdurchholz.com/HomeSC.gif",
       },
     ],
     locale: "en_US",
