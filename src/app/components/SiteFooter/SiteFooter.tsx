@@ -11,21 +11,27 @@ export default function SiteFooter() {
           <div className="max-w-screen-xl flex mx-auto">
             <ThemeToggle className="flex flex-2 justify-end"/>
             <div className="flex flex-6 justify-center flex-col text-xs lg:text-base">
-              <div className="text-center justify-items-center">Made with&nbsp;
+              <div className="text-center justify-items-center">Coded with&nbsp;
                 <Link
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer">
                     Next.js
                 </Link>
-                &nbsp;using&nbsp;
+                ,&nbsp;
                 <Link
                 href="https://tailwindcss.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                    Tailwind CSS.
+                    Tailwind CSS
                 </Link>
-                &nbsp;Assets made with&nbsp;
+                &nbsp;and
+                <Link
+                href="https://www.typescriptlang.org/"
+                target="_blank">
+                  TypeScript
+                </Link>
+                . Assets made with&nbsp;
                 <Link
                 href="https://www.aseprite.org/"
                 target="_blank">

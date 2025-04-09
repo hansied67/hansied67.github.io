@@ -7,106 +7,71 @@ export default function Portfolio() {
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 gap-16 sm:p-20">
           <main className="flex flex-col gap-[32px] row-start-2">
             <PortfolioEntry
-            className=""
-            title={
-            <span>
-              <Link
-              href="https://hansied67.github.io/flutter_dice_roller"
-              target="_blank">
-                D&D Dice Roller
-              </Link>
-            </span>}
+            title="This website!"
+            dates="March 2025 - April 2025"
             subtitle={
             <span>
-              A cross-platform, mobile-first app made with&nbsp;
+              A website coded from scratch using&nbsp;
               <Link
-              href="https://flutter.dev/"
+              href="https://nextjs.org"
               target="_blank">
-                Flutter
+                NextJS
               </Link>
-              &nbsp;&amp;&nbsp;
+              ,&nbsp;
               <Link
-              href="https://dart.dev/"
+              href="https://tailwindcss.com/"
               target="_blank">
-                Dart
+                Tailwind CSS
               </Link>
-              , styled with&nbsp;
+              , and&nbsp;
               <Link
-              href="https://m3.material.io/"
+              href="https://www.typescriptlang.org/"
               target="_blank">
-                Google&apos;s Material Design
+                TypeScript
+              </Link>
+              &nbsp;- hosted via&nbsp;
+              <Link
+              href="https://pages.github.com/"
+              target="_blank">
+                GitHub Pages
               </Link>
               .
-              <br />
-              Primarily used for&nbsp;
-              <Link
-              href="https://company.wizards.com/"
-              target="_blank">
-                Wizards of the Coast&apos;s
-              </Link>
-              &nbsp;properties:&nbsp;
-              <Link
-              href="https://dnd.wizards.com/"
-              target="_blank">
-                Dungeons & Dragons
-              </Link>
-              &nbsp;and&nbsp;
-              <Link
-              href="https://magic.wizards.com/"
-              target="_blank">
-                Magic: The Gathering
-              </Link>.
-              <br /><br />
             </span>}
             description={
             <span>
-              This was an app I made for a friend! They were dissatisfied with the customization available in other popular free dice roller apps.
+              I put in a great deal of work into this website to de-rust and improve my web development skillset after doing so much backend-heavy work professionally in the last few years. I focused heavily on a responsive UX via tailwind, custom components, and adhering to&nbsp;
+              <Link
+              href="https://developer.mozilla.org/en-US/"
+              target="_blank">
+                MDN&apos;s
+              </Link>
+              &nbsp;
+              <Link
+              href="https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+              target="_blank">
+                accessibility
+              </Link>
+              &nbsp;and&nbsp;
+              <Link
+              href="https://developer.mozilla.org/en-US/docs/Glossary/SEO"
+              target="_blank">
+                SEO
+              </Link>
+              &nbsp;guidelines via alt text, site/asset metadata, media queries, color contrast adherence, etc.
               <br />
-              The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek Material design and custom assets. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling! One of my favorite pet projects for this reason!
-              <br />
-              This was my first foray into mobile app development. It was available on Google Play Store for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality and a learning experience, anyway.
-              <br />
+              I spent a ton of time tweaking the UI and creating my own assets. It&apos;s been so fun combining my hobby of pixel art with web development to really give my site personality!
             </span>}
-            >
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRoller1.gif"
-                title="Dice Roller tab showcase - Footage of a user rolls 1 of each standard die type, re-rolling a few times, and clearing the output."
-                alt="D&D Dice Roller app - Dice Roller tab gif"
-                width={250}
-                height={0}
-                sizes="100vw"
-                className="mx-auto"
-                unoptimized
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRoller2.gif"
-                title="Custom Roller showcase - Footage of the user using the Custom Roller, acting as 'macros' for dice roll and modifier combinations."
-                alt="D&D Dice Roller app - Custom Roller gif"
-                width={250}
-                height={0}
-                sizes="100vw"
-                className="mx-auto"
-                unoptimized
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRoller3.png"
-                title="History showcase - Screenshot of the app's history interface, displaying the rolls enacted by the user in prior gifs."
-                alt="D&D Dice Roller app - Roll History"
-                width={250}
-                height={0}
-                sizes="100vw"
-                className="mx-auto"
-                />
-              </div>
-            </PortfolioEntry>
+            />
             <PortfolioEntry
-            className=""
-            title="Glass Bridge Memory Game"
+            title={
+            <span>
+              <Link
+              href="https://github.com/Software-Squids/Glass-Bridge-Memory-Game"
+              target="_blank">
+                Glass Bridge Memory Game
+              </Link>
+            </span>}
+            dates="October 2021 - December 2021"
             subtitle={
             <span>
               A Progressive Web Application coded in&nbsp;
@@ -184,8 +149,111 @@ export default function Portfolio() {
               </div>
             </PortfolioEntry>
             <PortfolioEntry
-            className=""
+            title={
+            <span>
+              <Link
+              href="https://hansied67.github.io/flutter_dice_roller"
+              target="_blank">
+                D&D Dice Roller
+              </Link>
+            </span>}
+            dates="April 2020 - June 2020"
+            subtitle={
+            <span>
+              A cross-platform, mobile-first app made with&nbsp;
+              <Link
+              href="https://flutter.dev/"
+              target="_blank">
+                Flutter
+              </Link>
+              &nbsp;&amp;&nbsp;
+              <Link
+              href="https://dart.dev/"
+              target="_blank">
+                Dart
+              </Link>
+              , styled with&nbsp;
+              <Link
+              href="https://m3.material.io/"
+              target="_blank">
+                Google&apos;s Material Design
+              </Link>
+              .
+              <br />
+              Primarily used for&nbsp;
+              <Link
+              href="https://company.wizards.com/"
+              target="_blank">
+                Wizards of the Coast&apos;s
+              </Link>
+              &nbsp;properties:&nbsp;
+              <Link
+              href="https://dnd.wizards.com/"
+              target="_blank">
+                Dungeons & Dragons
+              </Link>
+              &nbsp;and&nbsp;
+              <Link
+              href="https://magic.wizards.com/"
+              target="_blank">
+                Magic: The Gathering
+              </Link>.
+              <br /><br />
+            </span>}
+            description={
+            <span>
+              This was my first full-stack cross-platform app I published to the&nbsp;
+              <Link
+              href="https://play.google.com/store/"
+              target="_blank">
+                Google Play Store
+              </Link>
+              . It was available on for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality.
+              <br />
+              The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek Material design and custom assets.
+              <br />
+              I developed this app for a friend! They were dissatisfied with the customization available in other popular free dice roller apps. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling!
+            </span>}
+            >
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRoller1.gif"
+                title="Dice Roller tab showcase - Footage of a user rolls 1 of each standard die type, re-rolling a few times, and clearing the output."
+                alt="D&D Dice Roller app - Dice Roller tab gif"
+                width={350}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                unoptimized
+                />
+              </div>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRoller2.gif"
+                title="Custom Roller showcase - Footage of the user using the Custom Roller, acting as 'macros' for dice roll and modifier combinations."
+                alt="D&D Dice Roller app - Custom Roller gif"
+                width={350}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                unoptimized
+                />
+              </div>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRoller3.png"
+                title="History showcase - Screenshot of the app's history interface, displaying the rolls enacted by the user in prior gifs."
+                alt="D&D Dice Roller app - Roll History"
+                width={350}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
+            </PortfolioEntry>
+            <PortfolioEntry
             title="CTRBot"
+            dates="September 2019 - July 2020"
             subtitle={
             <span>
               A discord bot written in python interfacing with
@@ -242,8 +310,8 @@ export default function Portfolio() {
               </div>
             </PortfolioEntry>
             <PortfolioEntry
-            className=""
             title="Miscellaneous"
+            dates="2015 - 2025"
             subtitle={
             <span>
               Various apps, bots, websites, tools, prototypes, etc.
@@ -336,8 +404,8 @@ export default function Portfolio() {
               <div className='flex h-full justify-center items-center'>
                 <Image
                 src="/MTG SLO.png"
-                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
-                alt="Discord Screenshot - CTRBot track command"
+                title="MTG: Statistical Land Optimization - UI for senior capstone project"
+                alt="Screenshot of Hans's old app - MTG: Statistical Land Optimization"
                 width={400}
                 height={0}
                 sizes="100vw"
@@ -347,8 +415,8 @@ export default function Portfolio() {
               <div className='flex h-full justify-center items-center'>
                 <Image
                 src="/DiceRollerBeta.png"
-                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
-                alt="Discord Screenshot - CTRBot record commands"
+                title="D&D Dice Roller Mockup made with Python's UI framework 'tkinter.' Same functionality as the final Flutter app, with a much rougher visual design."
+                alt="D&D Dice Roller Mockup Python tkinter"
                 width={400}
                 height={0}
                 sizes="100vw"

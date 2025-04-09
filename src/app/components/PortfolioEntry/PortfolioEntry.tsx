@@ -4,10 +4,11 @@
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
 
 interface PortfolioProps {
-  children: React.ReactNode,
-  className: string | undefined,
+  children?: React.ReactNode,
+  className?: string | undefined,
   title: string | React.ReactElement,
-  subtitle: string | React.ReactElement,
+  dates?: string | React.ReactElement | undefined,
+  subtitle?: string | React.ReactElement,
   description: string | React.ReactElement,
 }
 
@@ -21,15 +22,17 @@ export default function PortfolioEntry(
           <div className="flex flex-row py-2 pl-2">
             <div className="flex flex-col">
               <h1 className="font-bold text-lg lg:text-6xl">{props.title}</h1>
+              <h2 className="text-xs lg:text-lg text-[var(--foreground)]/80"><b>{props.dates}</b></h2>
               <h2 className="text-sm lg:text-2xl">{props.subtitle}</h2>
               <h2 className="flex mt-auto text-sm lg:text-xl overflow-auto">{props.description}</h2>
             </div>
           </div>
+          { !props.children ? <div /> :
           <div className="w-3/4 lg:w-1/2 mx-auto">
             <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2">
               {props.children}
             </CustomCarousel>
-          </div>
+          </div> }
         </div>
       </div>
     )
