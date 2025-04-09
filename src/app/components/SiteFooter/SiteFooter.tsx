@@ -14,15 +14,13 @@ export default function SiteFooter() {
               <div className="text-center justify-items-center">Coded with&nbsp;
                 <Link
                 href="https://nextjs.org/"
-                target="_blank"
-                rel="noopener noreferrer">
+                target="_blank">
                     Next.js
                 </Link>
                 ,&nbsp;
                 <Link
                 href="https://tailwindcss.com/"
-                target="_blank"
-                rel="noopener noreferrer">
+                target="_blank">
                     Tailwind CSS
                 </Link>
                 &nbsp;and&nbsp;
