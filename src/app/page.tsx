@@ -28,16 +28,7 @@ export const metadata: Metadata = {
     siteName: "hansdurchholz.com",
     images: [
       {
-        url: "https://hansdurchholz.com/Frog.gif",
-      },
-      {
-        url: "https://hansdurchholz.com/worm_foreground.png",
-      },
-      {
-        url: "https://hansdurchholz.com/Bob Ross.png",
-      },
-      {
-        url: "https://hansdurchholz.com/HeidiHans.jpg",
+        url: "https://hansdurchholz.com/HomeSC.png",
       },
     ],
     locale: "en_US",

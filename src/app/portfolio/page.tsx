@@ -28,16 +28,7 @@ export const metadata: Metadata = {
     siteName: "hansdurchholz.com",
     images: [
       {
-        url: "https://hansdurchholz.com/PROS logo.png",
-      },
-      {
-        url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
-      },
-      {
-        url: "https://hansdurchholz.com/DiceRollerImage.png",
-      },
-      {
-        url: "https://hansdurchholz.com/CTRBot SC1.png",
+        url: "https://hansdurchholz.com/PortfolioSC.png",
       },
     ],
     locale: "en_US",
