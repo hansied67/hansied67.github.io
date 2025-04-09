@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,
-            images: ['https://hansdurchholz.com/GlassBridgeLoginDialogue.png', 'https://hansdurchholz.com/DiceRoller1.gif', 'https://hansdurchholz.com/CTRBot SC1.png', 'https://hansdurchholz.com/PROS logo.png'],
+            images: ['https://hansdurchholz.com/PROS logo.png', 'https://hansdurchholz.com/GlassBridgeLoginDialogue.png', 'https://hansdurchholz.com/DiceRollerImage.png', 'https://hansdurchholz.com/CTRBot SC1.png'],
         },
     ]
 }
