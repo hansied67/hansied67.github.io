@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-16">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center">
-        <div className="flex flex-col items-center rounded-xl p-2">
+        <div className="flex flex-col items-center rounded-xl">
           <h1 className="text-lg lg:text-5xl font-bold">
             Hi! Wanna see a frog?
           </h1>
