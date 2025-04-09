@@ -14,7 +14,7 @@ export default function SiteNav() {
     const  navItems = [
         { name: "Home", href: "/" },
         { name: "Portfolio", href: "/portfolio" },
-        { name: "Contact", href: "/contact" },
+        { name: "Bio", href: "/bio" },
     ];
 
     return (
@@ -44,6 +44,14 @@ export default function SiteNav() {
                 {item.href != pathname ? <Link href={item.href} className="site-nav text-sm lg:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">{item.name}</Link> : <span className="site-nav text-sm lg:text-lg font-bold ml-6 p-2 text-amber-500">{item.name}</span>}  
               </div>
             ))}
+            <div className="flex justify-end">
+            <Link
+            href="https://www.linkedin.com/in/hdurchholz/"
+            target="_blank"
+            className="site-nav text-sm lg:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">
+              Contact
+            </Link>
+            </div>
           </div>
         </div>
       </nav>

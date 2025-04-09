@@ -39,10 +39,11 @@ export default function Home() {
             I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!
             <br />
             Learn more in my
+            <Link href="/bio">&nbsp;extended bio</Link>
+            ,
             <Link href="/portfolio">&nbsp;portfolio</Link>
-            &nbsp;and
-            <Link href="/contact">&nbsp;additional contact information</Link>
-            &nbsp;pages!
+            , or&nbsp;
+            <Link href="https://www.linkedin.com/in/hdurchholz/" target="_blank">contact me!</Link>
           </h2>
           <div className="grid grid-cols-1 justify-items-center">
             <Link
