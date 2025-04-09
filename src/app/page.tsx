@@ -25,6 +25,7 @@ export default function Home() {
               width={256}
               height={256}
               unoptimized
+              priority
               />
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
                 Click the frog for Hans&apos;s résumé!

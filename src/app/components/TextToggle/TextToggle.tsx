@@ -8,7 +8,7 @@ export default function TextToggle(props: { className: string | undefined; }) {
     useEffect(() => {
         const preference = window?.localStorage.getItem('font-preference');
         const mainContainer = document.getElementById("main-container");
-        if (preference === "null") {
+        if (preference === null) {
             mainContainer?.classList.remove("font-sans");
             mainContainer?.classList.add("font-pixel");
             window.localStorage.setItem('font-preference', 'pixel');

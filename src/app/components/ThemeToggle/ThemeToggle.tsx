@@ -10,10 +10,9 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
 
     useEffect(() => {
         const preference = window?.localStorage.getItem('theme-preference');
-        console.log("useEffect: preference: " + preference);
         const root = document.querySelector<HTMLElement>(":root");
 
-        if (preference === "null") {
+        if (preference === null) {
           const browserPreference = window.matchMedia("(prefers-color-scheme:dark)").matches;
           root?.style.setProperty('--background', '#0a0a0a')
           root?.style.setProperty('--foreground', '#ededed')
@@ -37,7 +36,6 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
               setTheme(false);
             }
         }
-        console.log(preference);
     }, [])
 
     function toggleTheme() {
