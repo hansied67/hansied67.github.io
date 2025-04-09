@@ -37,15 +37,6 @@ export default function Portfolio() {
                 Google&apos;s Material Design
               </Link>
               .
-              <br /><br />
-            </span>}
-            description={
-            <span>
-              This was an app I made for a friend! They were dissatisfied with the customization available in other popular free dice roller apps.
-              <br />
-              The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek Material design and custom assets. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling! One of my favorite pet projects for this reason!
-              <br />
-              This was my first foray into mobile app development. It was available on Google Play Store for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality and a learning experience, anyway.
               <br />
               Primarily used for&nbsp;
               <Link
@@ -65,37 +56,53 @@ export default function Portfolio() {
               target="_blank">
                 Magic: The Gathering
               </Link>.
+              <br /><br />
+            </span>}
+            description={
+            <span>
+              This was an app I made for a friend! They were dissatisfied with the customization available in other popular free dice roller apps.
+              <br />
+              The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek Material design and custom assets. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling! One of my favorite pet projects for this reason!
+              <br />
+              This was my first foray into mobile app development. It was available on Google Play Store for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality and a learning experience, anyway.
+              <br />
             </span>}
             >
-              <Image
-              src="/DiceRoller1.gif"
-              title="Dice Roller tab showcase - Footage of a user rolls 1 of each standard die type, re-rolling a few times, and clearing the output."
-              alt="D&D Dice Roller app - Dice Roller tab gif"
-              width={250}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              unoptimized
-              />
-              <Image
-              src="/DiceRoller2.gif"
-              title="Custom Roller showcase - Footage of the user using the Custom Roller, acting as 'macros' for dice roll and modifier combinations."
-              alt="D&D Dice Roller app - Custom Roller gif"
-              width={250}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              unoptimized
-              />
-              <Image
-              src="/DiceRoller3.png"
-              title="History showcase - Screenshot of the app's history interface, displaying the rolls enacted by the user in prior gifs."
-              alt="D&D Dice Roller app - Roll History"
-              width={250}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              />
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRoller1.gif"
+                title="Dice Roller tab showcase - Footage of a user rolls 1 of each standard die type, re-rolling a few times, and clearing the output."
+                alt="D&D Dice Roller app - Dice Roller tab gif"
+                width={250}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                unoptimized
+                />
+              </div>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRoller2.gif"
+                title="Custom Roller showcase - Footage of the user using the Custom Roller, acting as 'macros' for dice roll and modifier combinations."
+                alt="D&D Dice Roller app - Custom Roller gif"
+                width={250}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                unoptimized
+                />
+              </div>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRoller3.png"
+                title="History showcase - Screenshot of the app's history interface, displaying the rolls enacted by the user in prior gifs."
+                alt="D&D Dice Roller app - Roll History"
+                width={250}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
             </PortfolioEntry>
             <PortfolioEntry
             className=""
@@ -153,24 +160,28 @@ export default function Portfolio() {
               <br />
               Finally, I managed all the bells and whistles pertinent to our scope, including internal/external metadata, documentation, responsive design, and video production for remote presentation.
             </span>}>
-              <Image
-              src="/GlassBridgeGameScreen.png"
-              title="Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
-              alt="Glass Bridge Memory Game - Game Screen"
-              width={400}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              />
-              <Image
-              src="/GlassBridgeLoginDialogue.png"
-              title="Glass Bridge Memory Game - Login Dialogue. This Material UI dialogue is a form for creating or logging into an account, making API calls to our Flask/Heroku back-end for validation."
-              alt="Glass Bridge Memory Game - Login Dialogue"
-              width={400}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              />
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/GlassBridgeGameScreen.png"
+                title="Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
+                alt="Glass Bridge Memory Game - Game Screen"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/GlassBridgeLoginDialogue.png"
+                title="Glass Bridge Memory Game - Login Dialogue. This Material UI dialogue is a form for creating or logging into an account, making API calls to our Flask/Heroku back-end for validation."
+                alt="Glass Bridge Memory Game - Login Dialogue"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
             </PortfolioEntry>
             <PortfolioEntry
             className=""
@@ -218,15 +229,132 @@ export default function Portfolio() {
                 className="mx-auto"
                 />
               </div>
-              <Image
-              src="/CTRBot SC2.png"
-              title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
-              alt="Discord Screenshot - CTRBot record commands"
-              width={400}
-              height={0}
-              sizes="100vw"
-              className="mx-auto"
-              />
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/CTRBot SC2.png"
+                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
+                alt="Discord Screenshot - CTRBot record commands"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
+            </PortfolioEntry>
+            <PortfolioEntry
+            className=""
+            title="Miscellaneous"
+            subtitle={
+            <span>
+              Various apps, bots, websites, tools, prototypes, etc.
+            </span>}
+            description={
+            <span>
+              I wanted to add this section to quickly go over some of my smaller projects that didn&apos;t quite warrant their own entry.
+              <br />
+              For my <b>OTHER</b> senior capstone project, I was the front-end lead for another&nbsp;
+              <Link
+              href="https://flutter.dev/"
+              target="_blank">
+                Flutter
+              </Link>
+              &nbsp;app published to the&nbsp;
+              <Link
+              href="https://play.google.com/store/"
+              target="_blank">
+                Google Play storefront
+              </Link>
+              . I handled <u>SEO</u>, <u>optimization</u>, and <u>responsive UI</u> implementation. Writing <u>API hooks</u> to our&nbsp;
+              <Link
+              href="https://scipy.org/"
+              target="_blank">
+                SciPy
+              </Link>
+              &nbsp;back-end and implementing <u>computer vision technology</u> was a fulfilling challenge to calculate the statistical best combination of lands in Magic: The Gathering.
+              <br />
+              Another major aspect of my skillset utilized in my projects is <u>prototyping</u>. I frequently use&nbsp;
+              <Link
+              href="https://www.python.org/"
+              target="_blank">
+                Python
+              </Link>
+              &nbsp;<u>to mock-up UIs, test systems, and write scripts.</u> The second image in this showcase details the prototype written for my D&D Dice Roller App, utilizing&nbsp;
+              <Link
+              href="https://docs.python.org/3/library/tkinter.html"
+              target="_blank">
+                tkinter
+              </Link>
+              .
+              <br />
+              Furthermore, I was a major contributor to each and every project I have been apart of, university-related or otherwise. I have been apart of an <u>award-winning game development team</u> using&nbsp;
+              <Link
+              href="https://www.pygame.org/"
+              target="_blank">
+                pygame
+              </Link>
+              , I have built <u>extensive and interconnected</u>&nbsp;
+              <Link
+              href="https://learn.microsoft.com/en-us/sql/"
+              target="_blank">
+                SQL Server
+              </Link>
+              &nbsp;&amp;&nbsp;
+              <Link
+              href="https://www.oracle.com/"
+              target="_blank">
+                Oracle
+              </Link>
+              &nbsp;back-ends for various school and professional ventures, and I have assisted friends in developing various mods for video games in&nbsp;
+              <Link
+              href="https://www.lua.org/"
+              target="_blank">
+                LUA
+              </Link>
+              &nbsp;and&nbsp;
+              <Link
+              href="https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf"
+              type="application/pdf"
+              target="_blank">
+                Assembly
+              </Link>
+              .
+              <br />
+              I have experience doing contract work in&nbsp;
+              <Link
+              href="https://learn.microsoft.com/en-us/office/vba/api/overview/"
+              target="_blank">
+                VBA
+              </Link>
+              &nbsp;for&nbsp;
+              <Link
+              href="https://www.microsoft.com/en-us/microsoft-365/excel"
+              target="_blank">
+                Microsoft Excel
+              </Link>
+              &nbsp;- and am remarkably proficient with the Software as a result of that and my professional work.
+            </span>}>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/MTG SLO.png"
+                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
+                alt="Discord Screenshot - CTRBot track command"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
+              <div className='flex h-full justify-center items-center'>
+                <Image
+                src="/DiceRollerBeta.png"
+                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
+                alt="Discord Screenshot - CTRBot record commands"
+                width={400}
+                height={0}
+                sizes="100vw"
+                className="mx-auto"
+                />
+              </div>
             </PortfolioEntry>
           </main>
         </div>
