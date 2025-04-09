@@ -13,7 +13,6 @@ export default function SiteNav() {
 
     const  navItems = [
         { name: "Home", href: "/" },
-        { name: "Bio", href: "/bio" },
         { name: "Portfolio", href: "/portfolio" },
         { name: "Contact", href: "/contact" },
     ];
