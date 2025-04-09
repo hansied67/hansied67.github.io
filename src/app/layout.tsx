@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "origin-when-cross-origin",
-  keywords: ["Hans Durchholz", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
+  keywords: ["Hans Durchholz", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   formatDetection: {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         height: 128,
       },
       {
-        url: "https://hansdurchholz.com/Worm_Foreground.png",
+        url: "https://hansdurchholz.com/worm_foreground.png",
         width: 128,
         height: 128,
       },
