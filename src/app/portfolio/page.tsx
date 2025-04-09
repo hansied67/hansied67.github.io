@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
       },
       {
-        url: "https://hansdurchholz.com/DiceRollerImage",
+        url: "https://hansdurchholz.com/DiceRollerImage.png",
       },
       {
         url: "https://hansdurchholz.com/CTRBot SC1.png",
