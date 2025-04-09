@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "hansdurchholz.com",
     images: [
       {
-        url: "https://s28006.pcdn.co/wp-content/uploads/2024/07/PROS-dual-Logo-2.svg",
+        url: "https://hansdurchholz.com/PROS logo.png",
       },
       {
         url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
