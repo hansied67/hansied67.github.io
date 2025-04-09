@@ -39,6 +39,7 @@ export default function Portfolio() {
             </span>}
             description={
             <span>
+              <br />
               I put in a great deal of work into this website to de-rust and improve my web development skillset after doing so much backend-heavy work professionally in the last few years. I focused heavily on a responsive UX via tailwind, custom components, and adhering to&nbsp;
               <Link
               href="https://developer.mozilla.org/en-US/"
@@ -60,8 +61,45 @@ export default function Portfolio() {
               &nbsp;guidelines via alt text, site/asset metadata, media queries, color contrast adherence, etc.
               <br />
               I spent a ton of time tweaking the UI and creating my own assets. It&apos;s been so fun combining my hobby of pixel art with web development to really give my site personality!
-            </span>}
-            />
+            </span>}>
+            </PortfolioEntry>
+            <PortfolioEntry
+            title={
+            <Link
+            href="https://pros.com/"
+            target="_blank"
+            className="inline-block">
+              <Image
+              src="https://s28006.pcdn.co/wp-content/uploads/2024/07/PROS-dual-Logo-2.svg"
+              title="https://pros.com"
+              alt="PROS Icon"
+              width={200}
+              height={0}
+              sizes="100vw"
+              />
+            </Link>}
+            dates="August 2022 - September 2023"
+            subtitle="Implementation Consultant II"
+            description={
+            <span>
+              <br />
+              High-level consulting for various industries across a wealth of technologies in an agile environment. I worked closely with clients to build/iterate on UAT applications with a focus on back-end operations in&nbsp;
+              <Link
+              href="https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms"
+              target="_blank">
+                SQL Server Management Studio (SSMS)
+              </Link>
+              &nbsp;&&nbsp;
+              <Link
+              href="https://www.oracle.com/database/sqldeveloper/"
+              target="_blank">
+                Oracle SQL Developer
+              </Link>
+              &nbsp;environments. I led production deployments which utilized the installation guides and users&apos; manuals I wrote. I processed data-loads, monitored jobs, and managed databases to fulfill our clients&apos; contracts. I regularly worked in <u>remote linux servers</u> via tunneling and scripting <u>(SQL MySQL, XML configs, batch scripts)</u> and managed our clients&apos; permissions to keep our environments secure. Modified the application&apos;s web UI via <u>Java, HTML, CSS & Javascript</u>.
+              <br />
+              I worked on several projects concurrently, each with their own clients and technical constraints. The main focus of my work was SQL/Oracle back-end operations, customer interfacing via scrums and on-call messaging, and documentation/deployments; each listed skill/responsibility made me a vital part of every project I was involved with.
+            </span>}>
+            </PortfolioEntry>
             <PortfolioEntry
             title={
             <span>
