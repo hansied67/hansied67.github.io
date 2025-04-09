@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className="text-lg max-w-5/6 md:max-w-2/3">
             Thanks for checking out my site!
             <br />
-            I&apos;m a full-stack software developer/consultant who has professional experience building and maintaining back-ends in customer-facing agile roles for fortune 500 companies.
+            I&apos;m a full-stack software developer/consultant with a Bachelor&apos;s degree in Computer Science. I have professional experience building and maintaining back-ends in customer-facing agile roles for fortune 500 companies.
             <br />
             I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!
             <br />
