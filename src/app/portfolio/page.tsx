@@ -69,6 +69,8 @@ export default function Portfolio() {
               &nbsp;guidelines via alt text, site/asset metadata, media queries, color contrast adherence, etc.
               <br />
               I spent a ton of time tweaking the UI and creating my own assets. It&apos;s been so fun combining my hobby of pixel art with web development to really give my site personality!
+              <br />
+              I&apos;m particularly proud of this site&apos;s scalability. My use of custom components and interfaces has allowed for much simpler UI refactoring - a prime example being these portfolio entries and their modular &quot;props.&quot;
             </span>}>
             </PortfolioEntry>
             <PortfolioEntry
@@ -392,7 +394,12 @@ export default function Portfolio() {
               target="_blank">
                 SciPy
               </Link>
-              &nbsp;back-end and implementing <u>computer vision technology</u> was a fulfilling challenge to calculate the statistical best combination of lands in Magic: The Gathering.
+              &nbsp;back-end and implementing <u>computer vision technology</u> was a fulfilling challenge to calculate the statistical best combination of lands in&nbsp;
+              <Link
+              href="https://magic.wizards.com/"
+              target="_blank">
+                Magic: The Gathering
+              </Link>.
               <br />
               Another major aspect of my skillset utilized in my projects is <u>prototyping</u>. I frequently use&nbsp;
               <Link
