@@ -6,6 +6,8 @@ import "./globals.css";
 import SiteNav from "./components/SiteNav/SiteNav";
 import SiteFooter from "./components/SiteFooter/SiteFooter";
 
+export const dynamic = "force-static";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
