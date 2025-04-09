@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import ImageHoverSwap from "../ImageHoverSwap/ImageHoverSwap";
 
 
 //TODO: Change sprite on click. Easy implementation, make new worm sprite?
@@ -77,7 +78,10 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
 
     return (
         <div className={props.className}>
-          {isDark ? darkButton : lightButton}
+          <ImageHoverSwap>
+            {isDark ? darkButton : lightButton}
+            {isDark ? lightButton : darkButton}
+          </ImageHoverSwap>
         </div>
     )
 }

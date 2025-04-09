@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ImageHoverSwap from "./components/ImageHoverSwap/ImageHoverSwap";
 
 
 export const metadata: Metadata = {
@@ -84,15 +85,24 @@ export default function Home() {
             className="hover:bg-(--color-background)/50 rounded-2xl"
             href="mailto:hans.durchholz@gmail.com"
             target="_blank">
-              <Image
-              className=""
-              src="/worm_foreground.png"
-              title="64x64 'worm on string' pixel art made by Hans in Aseprite"
-              alt="Worm pixel art"
-              width={256}
-              height={256}
-              unoptimized
-              />
+              <ImageHoverSwap>
+                <Image
+                src="/worm_foreground.png"
+                title="64x64 'worm on string' pixel art made by Hans in Aseprite"
+                alt="Worm pixel art"
+                width={256}
+                height={256}
+                unoptimized
+                />
+                <Image
+                src="/worm_petpet.gif"
+                title="64x64 'worm on string' pixel art made by Hans in Aseprite. Pet variant"
+                alt="Worm pixel art pet gif"
+                width={256}
+                height={256}
+                unoptimized
+                />
+              </ImageHoverSwap>
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
                 Click the worm for Hans&apos;s email!
               </div>
