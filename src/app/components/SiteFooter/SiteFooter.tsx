@@ -25,7 +25,7 @@ export default function SiteFooter() {
                 rel="noopener noreferrer">
                     Tailwind CSS
                 </Link>
-                &nbsp;and
+                &nbsp;and&nbsp;
                 <Link
                 href="https://www.typescriptlang.org/"
                 target="_blank">
