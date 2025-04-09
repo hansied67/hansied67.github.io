@@ -1,3 +1,38 @@
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Hans Durchholz - Bio",
+  description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
+  generator: "hansdurchholz.com",
+  applicationName: "hansdurchholz.com",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Hans Durchholz", "Bio", "Hans Durchholz Bio", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
+  creator: "Hans Durchholz",
+  publisher: "Hans Durchholz",
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Hans Durchholz - Bio",
+    description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
+    url: "https://hansdurchholz.com/bio",
+    siteName: "hansdurchholz.com",
+    images: [
+      {
+        url: "https://hansdurchholz.com/HeidiHans.jpg",
+      },
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+};
+
 export default function Bio() {
     return (
       <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">

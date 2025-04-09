@@ -1,6 +1,49 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import PortfolioEntry from "../components/PortfolioEntry/PortfolioEntry";
+
+
+export const metadata: Metadata = {
+  title: "Hans Durchholz - Portfolio",
+  description: "Relevant details of my past and ongoing professional backend work, as well as personal full-stack app development projects.",
+  generator: "hansdurchholz.com",
+  applicationName: "hansdurchholz.com",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Hans Durchholz", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
+  creator: "Hans Durchholz",
+  publisher: "Hans Durchholz",
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Hans Durchholz - Portfolio",
+    description: "Relevant details of my past and ongoing professional backend work, as well as personal full-stack app development projects.",
+    url: "https://hansdurchholz.com/portfolio",
+    siteName: "hansdurchholz.com",
+    images: [
+      {
+        url: "https://s28006.pcdn.co/wp-content/uploads/2024/07/PROS-dual-Logo-2.svg",
+      },
+      {
+        url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
+      },
+      {
+        url: "https://hansdurchholz.com/DiceRoller1.gif",
+      },
+      {
+        url: "https://hansdurchholz.com/CTRBot SC1.png",
+      },
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+};
 
 export default function Portfolio() {
     return (

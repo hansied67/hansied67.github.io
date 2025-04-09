@@ -1,7 +1,49 @@
+import type { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
+export const metadata: Metadata = {
+  title: "Hans Durchholz - Home",
+  description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+  generator: "hansdurchholz.com",
+  applicationName: "hansdurchholz.com",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Hans Durchholz", "Home", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
+  creator: "Hans Durchholz",
+  publisher: "Hans Durchholz",
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Hans Durchholz - Home",
+    description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+    url: "https://hansdurchholz.com",
+    siteName: "hansdurchholz.com",
+    images: [
+      {
+        url: "https://hansdurchholz.com/Frog.gif",
+      },
+      {
+        url: "https://hansdurchholz.com/worm_foreground.png",
+      },
+      {
+        url: "https://hansdurchholz.com/Bob Ross.png",
+      },
+      {
+        url: "https://hansdurchholz.com/HeidiHans.jpg",
+      },
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+};
 
 export default function Home() {
   return (
