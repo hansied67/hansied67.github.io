@@ -7,7 +7,15 @@ export default function Portfolio() {
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 gap-16 sm:p-20">
           <main className="flex flex-col gap-[32px] row-start-2">
             <PortfolioEntry
-            title="This website!"
+            title={
+            <span>
+              This website!&nbsp;
+            <Link
+            href="https://github.com/hansied67/hans-durchholz-dot-com"
+            target="_blank">
+              (GitHub)
+            </Link>
+            </span>}
             dates="March 2025 - April 2025"
             subtitle={
             <span>
@@ -149,7 +157,6 @@ export default function Portfolio() {
                 &nbsp;Squid Game
               </Link>
               .
-              <br /><br />
             </span>}
             description={
             <span>
@@ -236,7 +243,6 @@ export default function Portfolio() {
               target="_blank">
                 Magic: The Gathering
               </Link>.
-              <br /><br />
             </span>}
             description={
             <span>
@@ -312,7 +318,6 @@ export default function Portfolio() {
               target="_blank">
                 Crash Team Racing: Nitro Fueled
               </Link>.
-              <br /><br />
             </span>}
             description={
             <span>
@@ -348,7 +353,18 @@ export default function Portfolio() {
               </div>
             </PortfolioEntry>
             <PortfolioEntry
-            title="Miscellaneous"
+            title="Gensys Consulting, Chesterfield, MO"
+            dates="June 2017 - July 2017"
+            subtitle="Freelance Backend Scripter"
+            description={
+            <span>
+              Wrote SQL scripts to use with Oracle Enterprise Manager for database management, query optimizations, and file operations such as automatic backups.
+              <br />
+              Optimized queries, built database schemae, and performed ad-hoc requests on-site.
+            </span>}>
+            </PortfolioEntry>
+            <PortfolioEntry
+            title="Miscellaneous Projects & Contract Work"
             dates="2015 - 2025"
             subtitle={
             <span>
