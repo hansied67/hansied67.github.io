@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "origin-when-cross-origin",
-  keywords: ["Hans Durchholz", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
+  keywords: ["Hans Durchholz", "Portfolio", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   formatDetection: {
@@ -29,15 +29,23 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://hansdurchholz.com/PROS logo.png",
+        width: 128,
+        height: 128,
       },
       {
         url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
+        width: 128,
+        height: 128,
       },
       {
         url: "https://hansdurchholz.com/DiceRoller1.gif",
+        width: 128,
+        height: 128,
       },
       {
         url: "https://hansdurchholz.com/CTRBot SC1.png",
+        width: 128,
+        height: 128,
       },
     ],
     locale: "en_US",
