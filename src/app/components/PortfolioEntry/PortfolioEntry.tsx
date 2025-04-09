@@ -1,6 +1,6 @@
 'use client';
 
-// import Link from "next/link";
+import { Children } from "react";
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
 
 interface PortfolioProps {
@@ -27,11 +27,15 @@ export default function PortfolioEntry(
               <h2 className="flex mt-auto text-sm lg:text-xl overflow-auto">{props.description}</h2>
             </div>
           </div>
+          {/* Conditionally render nothing if no children, image if single child, carousel if multiple children. */}
           { !props.children ? <div /> :
           <div className="w-3/4 lg:w-1/2 mx-auto">
+            { Children.count(props.children) !== 1 ? 
             <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2">
               {props.children}
             </CustomCarousel>
+            : props.children
+            }
           </div> }
         </div>
       </div>
