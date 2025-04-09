@@ -37,11 +37,11 @@ const banter = localFont({
 
 export const metadata: Metadata = {
   title: "Hans Durchholz's Website",
-  description: "Hans Durchholz's Personal Website, with a bio, portfolio, and contact page.",
+  description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "origin-when-cross-origin",
-  keywords: ["Hans", "Durchholz", "Software", "Developer", "Implementation", "Consultant", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
+  keywords: ["Hans Durchholz", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   formatDetection: {
@@ -54,12 +54,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Hans Durchholz's Website",
-    description: "Hans Durchholz's Personal Website, with a bio, portfolio, and contact page.",
+    description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
     url: "https://hansdurchholz.com",
     siteName: "hansdurchholz.com",
     images: [
       {
         url: "https://hansdurchholz.com/Frog.gif",
+        width: 128,
+        height: 128,
+      },
+      {
+        url: "https://hansdurchholz.com/Worm_Foreground.png",
         width: 128,
         height: 128,
       },
@@ -79,12 +84,27 @@ export const metadata: Metadata = {
         height: 128,
       },
       {
-        url: "https://hansdurchholz.com/Worm_Foreground.png",
+        url: "https://hansdurchholz.com/flower.png",
         width: 128,
         height: 128,
       },
       {
-        url: "https://hansdurchholz.com/flower.png",
+        url: "https://hansdurchholz.com/HeidiHans.jpg",
+        width: 128,
+        height: 128,
+      },
+      {
+        url: "https://hansdurchholz.com/GlassBridgeLoginDialogue.png",
+        width: 128,
+        height: 128,
+      },
+      {
+        url: "https://hansdurchholz.com/DiceRoller1.gif",
+        width: 128,
+        height: 128,
+      },
+      {
+        url: "https://hansdurchholz.com/MTG_SLO.png",
         width: 128,
         height: 128,
       },

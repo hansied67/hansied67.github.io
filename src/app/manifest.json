@@ -1,7 +1,7 @@
 {
     "name": "Hans Durchholz's Website",
     "short_name": "Hans D Site",
-    "description": "Hans Durchholz's Personal Website, with a bio, portfolio, and contact page.",
+    "description": "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
     "start_url": "/",
     "display": "standalone",
     "icons": [

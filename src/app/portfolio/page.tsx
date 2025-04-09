@@ -11,7 +11,7 @@ export default function Portfolio() {
             <span>
               This website!&nbsp;
             <Link
-            href="https://github.com/hansied67/hans-durchholz-dot-com"
+            href="https://github.com/hansied67/hansied67.github.io"
             target="_blank">
               (GitHub)
             </Link>

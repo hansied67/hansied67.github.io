@@ -17,13 +17,13 @@ But, since it's good practice, here are installation instructions. Who knows, ma
 ## Install Steps
 1. Clone the repository.
 ```
-git clone https://github.com/hansied67/hans-durchholz-dot-com.git
+git clone https://github.com/hansied67/hansied67.github.io.git
 ```
 2. Step into the repository's directory.
 ```
-cd hans-durchholz-dot-com
+cd hansied67.github.io
 ```
-3. Install packages from [package.json](https://github.com/hansied67/hans-durchholz-dot-com/blob/main/package.json)
+3. Install packages from [package.json](https://github.com/hansied67/hansied67.github.io/blob/main/package.json)
 ```
 npm install
 ```
@@ -42,4 +42,4 @@ This website uses the great [Chevy Ray](https://chevyray.dev/)'s font [Banter](h
 The aforementioned use of Licensed Content falls under fair use, adhering to the [Pixel Font License Agreement](https://raw.githubusercontent.com/ChevyRay/pixel_font_megapack_license/main/LICENSE.txt).
 
 # License
-This project is licensed under the terms of the [MIT license](https://github.com/hansied67/hans-durchholz-dot-com/blob/main/LICENSE).
+This project is licensed under the terms of the [MIT license](https://github.com/hansied67/hansied67.github.io/blob/main/LICENSE).
