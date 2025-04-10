@@ -53,8 +53,8 @@ export default function Home() {
                 src="/Frog.gif"
                 title="64x64 frog pixel art gif made by Hans in Aseprite"
                 alt="Frog pixel art animation"
-                width={256}
-                height={256}
+                width={384}
+                height={384}
                 unoptimized
                 />
               </div>
@@ -87,16 +87,16 @@ export default function Home() {
                 src="/worm_foreground.png"
                 title="64x64 'worm on string' pixel art made by Hans in Aseprite"
                 alt="Worm pixel art"
-                width={256}
-                height={256}
+                width={384}
+                height={384}
                 unoptimized
                 />
                 <Image
                 src="/worm_petpet.gif"
                 title="64x64 'worm on string' pixel art made by Hans in Aseprite. Pet variant"
                 alt="Worm pixel art pet gif"
-                width={256}
-                height={256}
+                width={384}
+                height={384}
                 unoptimized
                 />
               </ImageHoverSwap>
