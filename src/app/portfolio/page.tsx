@@ -233,7 +233,7 @@ export default function Portfolio() {
             title={
             <span>
               <Link
-              href="https://hansied67.github.io/flutter_dice_roller"
+              href="https://hansdurchholz.com/flutter_dice_roller"
               target="_blank">
                 D&D Dice Roller
               </Link>
