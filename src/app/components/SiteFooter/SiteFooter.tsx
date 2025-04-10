@@ -35,14 +35,21 @@ export default function SiteFooter() {
                 target="_blank">
                     Aseprite
                 </Link>
-                &nbsp;by&nbsp;
+                .
+              </div>
+              <div className="text-center justify-items-center">
+                ©&nbsp;
+                <Link
+                href="https://github.com/hansied67/hansied67.github.io/blob/main/LICENSE"
+                target="_blank">
+                2025&nbsp;
+                </Link>
                 <Link
                 href="https://bsky.app/profile/grunchyhands.bsky.social"
                 target="_blank">
-                    Me :)
+                  Hans Durchholz
                 </Link>
-              </div>
-              <div className="text-center justify-items-center">
+                &nbsp;|&nbsp;
                 <Link
                 href="https://chevyray.itch.io/pixel-font-banter"
                 target="_blank">
@@ -54,7 +61,7 @@ export default function SiteFooter() {
                 target="_blank">
                     Chevy Ray
                 </Link>
-                &nbsp;|&nbsp;
+                &nbsp;
                 <Link
                 href="https://raw.githubusercontent.com/ChevyRay/pixel_font_megapack_license/main/LICENSE.txt"
                 target="_blank">
