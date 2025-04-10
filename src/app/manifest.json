@@ -2,11 +2,22 @@
     "name": "Hans Durchholz's Website",
     "short_name": "Hans Durchholz Site",
     "description": "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+    "id": "/",
     "start_url": "/",
     "theme_color": "#f59e0b",
     "background_color": "#171717",
     "display": "standalone",
     "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
         {
             "src": "/favicon-192x192.png",
             "sizes": "192x192",
@@ -16,6 +27,46 @@
             "src": "/favicon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "sizes": "320x320",
+            "src": "/maskable_icon.png",
+            "type": "image/png"
+          }
+    ],
+    "shortcuts": [
+        {
+            "name": "Open Home Page",
+            "short_name": "Home",
+            "description": "hansdurchholz.com home page",
+            "url": "/"
+        },
+        {
+            "name": "Open Portfolio",
+            "short_name": "Portfolio",
+            "description": "hansdurchholz.com portfolio page",
+            "url": "/portfolio"
+        },
+        {
+            "name": "Open Bio",
+            "short_name": "Bio",
+            "description": "hansdurchholz.com bio page",
+            "url": "/portfolio"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/HomeSCMobile.png",
+            "type": "image/png",
+            "sizes": "1440x3120",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/PortfolioSC_Full.png",
+            "type": "image/png",
+            "sizes": "1920x1032",
+            "form_factor": "wide"
         }
     ]
 }
