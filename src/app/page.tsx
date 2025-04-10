@@ -43,14 +43,14 @@ export default function Home() {
             Hi! Wanna see a frog?
           </h1>
           <div className="grid grid-cols-1 justify-items-center">
-            <Link
+            <a
             className="hover:bg-(--color-background)/50 rounded-2xl"
-            href="/"
+            href="/docs/HansDurchholz-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer">
               <div>
                 <Image
-                src="/worm_foreground.png"
+                src="/Frog.gif"
                 title="64x64 frog pixel art gif made by Hans in Aseprite"
                 alt="Frog pixel art animation"
                 width={256}
@@ -61,7 +61,7 @@ export default function Home() {
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
                 Click the frog for Hans&apos;s résumé!
               </div>
-            </Link>
+            </a>
           </div>
           <h2 className="text-lg">
             Thanks for checking out my site!
