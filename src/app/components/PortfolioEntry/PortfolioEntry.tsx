@@ -31,7 +31,7 @@ export default function PortfolioEntry(
           { !props.children ? <div /> :
           <div className="w-3/4 lg:w-1/2 mx-auto">
             { Children.count(props.children) !== 1 ? 
-            <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2">
+            <CustomCarousel className="border-1 rounded-lg shadow-lg md:mb-2 items-center">
               {props.children}
             </CustomCarousel>
             : props.children

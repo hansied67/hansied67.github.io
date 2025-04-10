@@ -214,7 +214,6 @@ export default function Portfolio() {
                 width={400}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
               <div className='flex h-full justify-center items-center'>
@@ -225,7 +224,6 @@ export default function Portfolio() {
                 width={400}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
             </PortfolioEntry>
@@ -303,7 +301,6 @@ export default function Portfolio() {
                 width={350}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 unoptimized
                 />
               </div>
@@ -315,7 +312,6 @@ export default function Portfolio() {
                 width={350}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 unoptimized
                 />
               </div>
@@ -327,7 +323,6 @@ export default function Portfolio() {
                 width={350}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
             </PortfolioEntry>
@@ -373,7 +368,6 @@ export default function Portfolio() {
                 width={400}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
               <div className='flex h-full justify-center items-center'>
@@ -384,7 +378,6 @@ export default function Portfolio() {
                 width={400}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
             </PortfolioEntry>
@@ -504,7 +497,6 @@ export default function Portfolio() {
                 width={400}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
               <div className='flex h-full justify-center items-center'>
@@ -515,7 +507,6 @@ export default function Portfolio() {
                 width={400}
                 height={0}
                 sizes="100vw"
-                className="mx-auto"
                 />
               </div>
             </PortfolioEntry>
