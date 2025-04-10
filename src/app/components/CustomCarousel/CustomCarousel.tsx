@@ -16,6 +16,7 @@ export default function CustomCarousel(props: CarouselProps) {
             variant="text"
             color="amber"
             size="lg"
+            aria-label="Carousel Back Button"
             onClick={handlePrev}
             className="!absolute top-2/4 left-4 -translate-y-2/4 cursor-pointer"
           >
@@ -29,6 +30,7 @@ export default function CustomCarousel(props: CarouselProps) {
             variant="text"
             color="amber"
             size="lg"
+            aria-label="Carousel Next Button"
             onClick={handleNext}
             className="!absolute top-2/4 !right-4 -translate-y-2/4 cursor-pointer"
           >
