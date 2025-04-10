@@ -18,9 +18,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: true,
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
   openGraph: {
     title: "Hans Durchholz - Portfolio",
     description: "Relevant details of my past and ongoing professional backend work, as well as personal full-stack app development projects.",
