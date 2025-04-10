@@ -4,7 +4,7 @@
     "description": "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
     "start_url": "/",
     "theme_color": "#f59e0b",
-    "background_color": "#171717;",
+    "background_color": "#171717",
     "display": "standalone",
     "icons": [
         {
