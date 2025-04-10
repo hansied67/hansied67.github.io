@@ -12,8 +12,10 @@ export default function ImageHoverSwap(props: { className?: string | undefined; 
 
     return (
       <div
-        onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}
+        onPointerEnter={() => setIsHover(true)}
+        onPointerDown={() => setIsHover(true)}
+        onPointerLeave={() => setIsHover(false)}
+        onPointerCancel={() => setIsHover(false)}
       >
         { isHover ? secondImage : firstImage }
       </div>
