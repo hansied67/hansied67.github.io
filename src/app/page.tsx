@@ -45,12 +45,12 @@ export default function Home() {
           <div className="grid grid-cols-1 justify-items-center">
             <Link
             className="hover:bg-(--color-background)/50 rounded-2xl"
-            href="/docs/HansDurchholz-Resume.pdf"
+            href="/"
             target="_blank"
             rel="noopener noreferrer">
               <div>
                 <Image
-                src="/Frog.webp"
+                src="/worm_foreground.png"
                 title="64x64 frog pixel art gif made by Hans in Aseprite"
                 alt="Frog pixel art animation"
                 width={256}
