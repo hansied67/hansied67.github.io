@@ -7,7 +7,7 @@ import TextToggle from "../TextToggle/TextToggle";
 
 export default function SiteFooter() {
     return(
-        <footer className="md:fixed w-full bottom-0 items-stretch backdrop-blur">
+        <footer className="fixed w-full bottom-0 items-stretch backdrop-blur">
           <div className="max-w-screen-xl flex mx-auto">
             <ThemeToggle className="flex flex-2 justify-end"/>
             <div className="flex flex-6 justify-center flex-col text-xs lg:text-base">
@@ -33,23 +33,22 @@ export default function SiteFooter() {
                 <Link
                 href="https://www.aseprite.org/"
                 target="_blank">
-                    Aseprite
+                  Aseprite
                 </Link>
-                .
-              </div>
-              <div className="text-center justify-items-center">
-                ©&nbsp;
+                . ©&nbsp;
                 <Link
                 href="https://github.com/hansied67/hansied67.github.io/blob/main/LICENSE"
                 target="_blank">
-                2025&nbsp;
+                  2025
                 </Link>
+                &nbsp;
                 <Link
                 href="https://bsky.app/profile/grunchyhands.bsky.social"
                 target="_blank">
                   Hans Durchholz
                 </Link>
-                &nbsp;|&nbsp;
+              </div>
+              <div className="text-center justify-items-center">
                 <Link
                 href="https://chevyray.itch.io/pixel-font-banter"
                 target="_blank">
