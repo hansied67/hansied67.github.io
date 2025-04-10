@@ -45,7 +45,6 @@ export default function Home() {
           <div className="grid grid-cols-1 justify-items-center">
             <Link
             className="hover:bg-(--color-background)/50 rounded-2xl"
-            type="application/pdf"
             href="/HansDurchholz-Resume.pdf"
             target="_blank">
               <Image

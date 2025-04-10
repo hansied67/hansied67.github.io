@@ -359,7 +359,7 @@ export default function Portfolio() {
             </span>}>
               <div className='flex h-full justify-center items-center'>
                 <Image
-                src="/CTRBot SC1.png"
+                src="/CTRBot%20SC1.png"
                 title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
                 alt="Discord Screenshot - CTRBot track command"
                 width={400}
@@ -369,7 +369,7 @@ export default function Portfolio() {
               </div>
               <div className='flex h-full justify-center items-center'>
                 <Image
-                src="/CTRBot SC2.png"
+                src="/CTRBot%20SC2.png"
                 title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
                 alt="Discord Screenshot - CTRBot record commands"
                 width={400}
@@ -466,7 +466,6 @@ export default function Portfolio() {
               &nbsp;and&nbsp;
               <Link
               href="https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf"
-              type="application/pdf"
               target="_blank">
                 Assembly
               </Link>
@@ -488,7 +487,7 @@ export default function Portfolio() {
             </span>}>
               <div className='flex h-full justify-center items-center'>
                 <Image
-                src="/MTG SLO.png"
+                src="/MTG%20SLO.png"
                 title="MTG: Statistical Land Optimization - UI for senior capstone project"
                 alt="Screenshot of Hans's old app - MTG: Statistical Land Optimization"
                 width={400}

@@ -23,7 +23,7 @@ export default function SiteNav() {
           <div className="flex flex-1 items-center mx-auto">
             <Image
               className="mx-1 mt-1 md:mb-1 size-[48px] lg:size-[64px]"
-              src="/Bob Ross.png"
+              src="/Bob%20Ross.png"
               title="32x32 pixel art of lakeside mountains made by Hans in Aseprite."
               alt="Lakeside mountains pixel art"
               width={64}
