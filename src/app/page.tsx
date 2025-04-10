@@ -47,16 +47,16 @@ export default function Home() {
             className="hover:bg-(--color-background)/50 rounded-2xl"
             href="/HansDurchholz-Resume.pdf"
             target="_blank">
-              <Image
-              className=""
-              src="/Frog.gif"
-              title="64x64 frog pixel art gif made by Hans in Aseprite"
-              alt="Frog pixel art animation"
-              width={256}
-              height={256}
-              unoptimized
-              priority
-              />
+              <div>
+                <Image
+                src="/Frog.gif"
+                title="64x64 frog pixel art gif made by Hans in Aseprite"
+                alt="Frog pixel art animation"
+                width={256}
+                height={256}
+                unoptimized
+                />
+              </div>
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
                 Click the frog for Hans&apos;s résumé!
               </div>
