@@ -18,7 +18,7 @@ export default function CustomCarousel(props: CarouselProps) {
             size="lg"
             aria-label="Carousel Back Button"
             onClick={handlePrev}
-            className="!absolute top-2/4 left-4 -translate-y-2/4 cursor-pointer"
+            className="!absolute top-2/4 left-2 -translate-y-2/4 cursor-pointer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
               <path fillRule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clipRule="evenodd" />
@@ -32,7 +32,7 @@ export default function CustomCarousel(props: CarouselProps) {
             size="lg"
             aria-label="Carousel Next Button"
             onClick={handleNext}
-            className="!absolute top-2/4 !right-4 -translate-y-2/4 cursor-pointer"
+            className="!absolute top-2/4 !right-2 -translate-y-2/4 cursor-pointer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
               <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
@@ -40,7 +40,7 @@ export default function CustomCarousel(props: CarouselProps) {
           </IconButton>
         )}
         navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+          <div className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
             {new Array(length).fill("").map((_, i) => (
               <span
                 key={i}

@@ -78,7 +78,6 @@ export default function Portfolio() {
             </span>}
             description={
             <span>
-              <br />
               I put in a great deal of work into this website to de-rust and improve my web development skillset after doing so much backend-heavy work professionally in the last few years. I focused heavily on a responsive UX via tailwind, custom components, and adhering to&nbsp;
               <Link
               href="https://developer.mozilla.org/en-US/"
@@ -116,14 +115,12 @@ export default function Portfolio() {
               alt="PROS Icon"
               width={200}
               height={0}
-              sizes="100vw"
               />
             </Link>}
             dates="August 2022 - September 2023"
             subtitle="Implementation Consultant II"
             description={
             <span>
-              <br />
               High-level consulting for various industries across a wealth of technologies in an agile environment. I worked closely with clients to build/iterate on UAT applications with a focus on back-end operations in&nbsp;
               <Link
               href="https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms"
@@ -208,9 +205,8 @@ export default function Portfolio() {
                 src="/GlassBridgeGameScreen.png"
                 title="Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
                 alt="Glass Bridge Memory Game - Game Screen"
-                width={400}
+                width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
               <div className='flex h-full justify-center items-center'>
@@ -218,20 +214,20 @@ export default function Portfolio() {
                 src="/GlassBridgeLoginDialogue.png"
                 title="Glass Bridge Memory Game - Login Dialogue. This Material UI dialogue is a form for creating or logging into an account, making API calls to our Flask/Heroku back-end for validation."
                 alt="Glass Bridge Memory Game - Login Dialogue"
-                width={400}
+                width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
             </PortfolioEntry>
             <PortfolioEntry
             title={
             <span>
-              <Link
+              {/* Link -> a to prevent 404, similar to PDF error */}
+              <a
               href="https://hansdurchholz.com/flutter_dice_roller"
               target="_blank">
                 D&D Dice Roller
-              </Link>
+              </a>
             </span>}
             dates="April 2020 - June 2020"
             subtitle={
@@ -283,7 +279,7 @@ export default function Portfolio() {
               target="_blank">
                 Google Play Store
               </Link>
-              . It was available on for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality.
+              . It was available for over 5 years; the site has since replaced the mobile app. It still runs perfectly on Android/iOS/web - the app publishing was more of a formality.
               <br />
               The app serves as a standard dice rolling app with a &quot;Custom Roller&quot; tab for specific, spells, actions, etc. I had a great time designing the app&apos;s sleek Material design and custom assets.
               <br />
@@ -297,7 +293,6 @@ export default function Portfolio() {
                 alt="D&D Dice Roller app - Dice Roller tab gif"
                 width={350}
                 height={0}
-                sizes="100vw"
                 unoptimized
                 />
               </div>
@@ -308,7 +303,6 @@ export default function Portfolio() {
                 alt="D&D Dice Roller app - Custom Roller gif"
                 width={350}
                 height={0}
-                sizes="100vw"
                 unoptimized
                 />
               </div>
@@ -319,7 +313,6 @@ export default function Portfolio() {
                 alt="D&D Dice Roller app - Roll History"
                 width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
             </PortfolioEntry>
@@ -362,9 +355,8 @@ export default function Portfolio() {
                 src="/CTRBot%20SC1.png"
                 title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
                 alt="Discord Screenshot - CTRBot track command"
-                width={400}
+                width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
               <div className='flex h-full justify-center items-center'>
@@ -372,9 +364,8 @@ export default function Portfolio() {
                 src="/CTRBot%20SC2.png"
                 title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
                 alt="Discord Screenshot - CTRBot record commands"
-                width={400}
+                width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
             </PortfolioEntry>
@@ -490,9 +481,8 @@ export default function Portfolio() {
                 src="/MTG%20SLO.png"
                 title="MTG: Statistical Land Optimization - UI for senior capstone project"
                 alt="Screenshot of Hans's old app - MTG: Statistical Land Optimization"
-                width={400}
+                width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
               <div className='flex h-full justify-center items-center'>
@@ -500,9 +490,8 @@ export default function Portfolio() {
                 src="/DiceRollerBeta.png"
                 title="D&D Dice Roller Mockup made with Python's UI framework 'tkinter.' Same functionality as the final Flutter app, with a much rougher visual design."
                 alt="D&D Dice Roller Mockup Python tkinter"
-                width={400}
+                width={350}
                 height={0}
-                sizes="100vw"
                 />
               </div>
             </PortfolioEntry>
