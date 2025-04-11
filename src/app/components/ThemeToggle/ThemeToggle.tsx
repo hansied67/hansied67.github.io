@@ -62,7 +62,6 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         alt="Light mode toggle"
         width={64}
         height={64}
-        priority
       />
     </button>
     const lightButton = <button onClick={toggleTheme}>
@@ -72,7 +71,6 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
       alt="Dark mode toggle"
       width={64}
       height={64}
-      priority
     />
   </button>
 

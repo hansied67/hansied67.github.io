@@ -127,6 +127,7 @@ export default function Home() {
             alt="Heidi Dog 2"
             width={400}
             height={400}
+            priority
             />
           </div>
         </div>
