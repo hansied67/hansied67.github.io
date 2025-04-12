@@ -37,7 +37,7 @@ export default function Portfolio() {
     return (
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
           <main className="flex flex-col gap-[32px] row-start-2">
-            <PortfolioEntry
+            <PortfolioEntry id="hansdurchholz.com"
             title={
             <span>
               This website!&nbsp;
@@ -103,7 +103,7 @@ export default function Portfolio() {
               I&apos;m particularly proud of this site&apos;s scalability. My use of custom components and interfaces has allowed for much simpler UI refactoring - a prime example being these portfolio entries and their modular &quot;props.&quot;
             </span>}>
             </PortfolioEntry>
-            <PortfolioEntry
+            <PortfolioEntry id="pros"
             title={
             <Link
             href="https://pros.com/"
@@ -138,7 +138,7 @@ export default function Portfolio() {
               I worked on several projects concurrently, each with their own clients and technical constraints. The main focus of my work was SQL/Oracle back-end operations, customer interfacing via scrums and on-call messaging, and documentation/deployments; each listed skill/responsibility made me a vital part of every project I was involved with.
             </span>}>
             </PortfolioEntry>
-            <PortfolioEntry
+            <PortfolioEntry id="glass-bridge"
             title={
             <span>
               <Link
@@ -219,7 +219,7 @@ export default function Portfolio() {
                 />
               </div>
             </PortfolioEntry>
-            <PortfolioEntry
+            <PortfolioEntry id="dice-roller"
             title={
             <span>
               {/* Link -> a to prevent 404, similar to PDF error */}
@@ -316,7 +316,7 @@ export default function Portfolio() {
                 />
               </div>
             </PortfolioEntry>
-            <PortfolioEntry
+            <PortfolioEntry id="CTRBot"
             title="CTRBot"
             dates="September 2019 - July 2020"
             subtitle={
@@ -369,7 +369,7 @@ export default function Portfolio() {
                 />
               </div>
             </PortfolioEntry>
-            <PortfolioEntry
+            <PortfolioEntry id="gensys-consulting"
             title="Gensys Consulting, Chesterfield, MO"
             dates="June 2017 - July 2017"
             subtitle="Freelance Backend Scripter"
@@ -380,7 +380,7 @@ export default function Portfolio() {
               Optimized queries, built database schemae, and performed ad-hoc requests on-site.
             </span>}>
             </PortfolioEntry>
-            <PortfolioEntry
+            <PortfolioEntry id="misc-projects-work"
             title="Miscellaneous Projects & Contract Work"
             dates="2015 - 2025"
             subtitle={

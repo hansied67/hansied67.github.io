@@ -10,14 +10,16 @@ interface PortfolioProps {
   dates?: string | React.ReactElement | undefined,
   subtitle?: string | React.ReactElement,
   description: string | React.ReactElement,
+  id?: string | undefined
 }
 
 
 // Custom component for easy portfolio additions/modifications
 export default function PortfolioEntry(
   props: PortfolioProps) {
+    const portClass = (props.className ? "portfolio-entry " + props.className : "portfolio-entry scroll-mt-[92px] md:scroll-mt-[76px]")
     return (
-      <div className={props.className}>
+      <div className={portClass} id={props.id}>
         <div className="flex flex-col xl:flex-row gap-2 border-2 shadow-lg rounded-xl p-2">
           <div className="flex flex-row py-2 pl-2">
             <div className="flex flex-col">

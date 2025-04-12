@@ -106,7 +106,7 @@ export default function Home() {
             </Link>
           </div>
           Please enjoy these lovely pictures of me and my dog Heidi!
-          <div className="flex flex-col lg:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
+          <div className="flex flex-col xl:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
             <Image
             src="/Heidi1.jpg"
             title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
