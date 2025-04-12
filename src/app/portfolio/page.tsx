@@ -37,6 +37,7 @@ export default function Portfolio() {
     return (
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
           <main className="flex flex-col gap-[32px] row-start-2">
+            <h1 className="hidden">Hans Durchholz&apos;s Portfolio</h1>
             <PortfolioEntry id="hansdurchholz.com"
             title={
             <span>
