@@ -19,6 +19,8 @@ export default function CustomCarousel(props: CarouselProps) {
           <Carousel
           {...props}
           loop={true}
+          role="listbox"
+          aria-orientation="horizontal"
           prevArrow={({ handlePrev }) => (
             <IconButton
               variant="text"
@@ -52,7 +54,8 @@ export default function CustomCarousel(props: CarouselProps) {
               {new Array(length).fill("").map((_, i) => (
                 <span
                   key={i}
-                  aria-label={carouselTitle + " Jump to Image " + (i+1).toString()}
+                  role="option"
+                  aria-selected={activeIndex === i ? true : false}
                   className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
                     activeIndex === i ? "w-8 bg-amber-500" : "w-4 bg-amber-500/50"
                   }`}
