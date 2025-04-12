@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
-  keywords: ["Durchholz", "Hans Durchholz", "Programmer", "hansdurchholz.com", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript", "Website", "Site", "Frog", "Worm String", "Portfolio"],
+  keywords: ["Hans Durchholz Com", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX", "Website", "Site", "Frog", "Worm String", "Portfolio"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   formatDetection: {
@@ -44,11 +44,10 @@ export default function Home() {
             Hi! Wanna see a frog?
           </h1>
           <div className="grid grid-cols-1 justify-items-center">
-            <a
+            <Link
             className="hover:bg-(--color-background)/50 rounded-2xl"
-            href="/docs/HansDurchholz-Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer">
+            href="/resume"
+            target="_blank">
               <div>
                 <Image
                 src="/Frog.gif"
@@ -63,7 +62,7 @@ export default function Home() {
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
                 Click the frog for Hans&apos;s résumé!
               </div>
-            </a>
+            </Link>
           </div>
           <h2 className="text-lg">
             Thanks for checking out my site!

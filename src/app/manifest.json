@@ -69,7 +69,7 @@
             "name": "Open Resume",
             "short_name": "Hans Resume",
             "description": "hansdurchholz.com resume pdf",
-            "url": "/docs/HansDurchholz-Resume.pdf",
+            "url": "/resume",
             "icons": [
                 {
                     "src": "/web-app-manifest-192x192.png",
