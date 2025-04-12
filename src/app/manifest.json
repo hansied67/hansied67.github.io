@@ -64,6 +64,19 @@
                     "type": "image/png"
                 }
             ]
+        },
+        {
+            "name": "Open Resume",
+            "short_name": "Hans Resume",
+            "description": "hansdurchholz.com resume pdf",
+            "url": "/docs/HansDurchholz-Resume.pdf",
+            "icons": [
+                {
+                    "src": "/web-app-manifest-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
         }
     ],
     "screenshots": [
