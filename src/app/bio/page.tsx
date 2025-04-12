@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
-  referrer: "origin-when-cross-origin",
+  referrer: "strict-origin-when-cross-origin",
   keywords: ["Hans Durchholz", "Bio", "Hans Durchholz Bio", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",

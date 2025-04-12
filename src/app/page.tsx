@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
-  referrer: "origin-when-cross-origin",
+  referrer: "strict-origin-when-cross-origin",
   keywords: ["Durchholz", "Hans Durchholz", "Programmer", "hansdurchholz.com", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript", "Website", "Site", "Frog", "Worm String", "Portfolio"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
@@ -57,6 +57,7 @@ export default function Home() {
                 width={256}
                 height={256}
                 unoptimized
+                priority
                 />
               </div>
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
@@ -91,6 +92,7 @@ export default function Home() {
                 width={256}
                 height={256}
                 unoptimized
+                priority
                 />
                 <Image
                 src="/worm_petpet.gif"

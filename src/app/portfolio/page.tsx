@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Relevant details of my past and ongoing professional backend work, as well as personal full-stack app development projects.",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
-  referrer: "origin-when-cross-origin",
+  referrer: "strict-origin-when-cross-origin",
   keywords: ["Hans Durchholz", "Portfolio", "hansdurchholz.com", "Durchholz", "St. Louis, MO", "St. Louis", "MO", "Missouri", "Software Developer", "Implementation Consultant", "Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "JavaScript"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
@@ -109,13 +109,15 @@ export default function Portfolio() {
             <Link
             href="https://pros.com/"
             target="_blank"
-            className="inline-block">
+            className="inline-block"
+            rel="no-referrer">
               <Image
               src="https://s28006.pcdn.co/wp-content/uploads/2024/07/PROS-dual-Logo-2.svg"
               title="https://pros.com"
               alt="PROS Icon"
               width={200}
               height={0}
+              
               />
             </Link>}
             dates="August 2022 - September 2023"

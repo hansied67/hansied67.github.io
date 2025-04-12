@@ -11,6 +11,7 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 /* Banter & Banter Bold fonts by Chevy Ray: https://chevyray.itch.io/pixel-font-banter */
@@ -28,6 +29,7 @@ const banter = localFont({
   ],
   variable: "--font-banter",
   display: "swap",
+  preload: false,
 })
 
 // const pixelFont = localFont({
