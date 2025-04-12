@@ -38,8 +38,9 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
       <main className="flex flex-col gap-[32px] row-start-2 items-center">
+
         <div className="flex flex-col items-center rounded-xl">
-          <h1 className="text-lg lg:text-5xl font-bold">
+          <h1 className="text-lg md:text-5xl font-bold">
             Hi! Wanna see a frog?
           </h1>
           <div className="grid grid-cols-1 justify-items-center">
