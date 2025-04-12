@@ -14,24 +14,17 @@ export default function TextToggle(props: { className: string | undefined; }) {
             window.localStorage.setItem("font-preference", "pixel");
         }
         else {
-            const fontPrompt = window.localStorage.getItem("font-prompt");
             if (fontPreference == "pixel") {
                 mainContainer?.classList.remove("font-sans");
                 mainContainer?.classList.add("font-pixel");
 
                 window.localStorage.setItem("font-preference", "pixel");
-                if (fontPrompt !== null) {
-                    window.localStorage.setItem("font-prompt", "No")
-                };
             }
             else {
                 mainContainer?.classList.remove("font-pixel");
                 mainContainer?.classList.add("font-sans");
 
                 window.localStorage.setItem("font-preference", "sans");
-                if (fontPrompt !== null) {
-                    window.localStorage.setItem("font-prompt", "Yes");
-                }
             }
         }
     }, [])
