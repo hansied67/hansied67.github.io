@@ -41,7 +41,7 @@ export default function SiteNav() {
       setOpen(false);
       window.localStorage.setItem("font-prompt", decision);
 
-      const mainContainer = document.getElementById("main-container");
+      const mainContainer = document.getElementById("root-container");
       if (decision === "Yes") {
         mainContainer?.classList.remove("font-pixel");
         mainContainer?.classList.add("font-sans");
@@ -57,6 +57,7 @@ export default function SiteNav() {
     return (
       <nav className="fixed w-full z-20 top-0 start-0">
         <div className="backdrop-blur bg-opacity-30">
+        <a className="fixed -translate-y-full focus:translate-y-0 ml-2" href="#main">Skip to Content</a>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <div className="flex flex-1 items-center mx-auto">
               <Image
@@ -96,6 +97,7 @@ export default function SiteNav() {
         <Alert
         open={open}
         className="font-serif mx-auto max-w-screen-md"
+        aria-label="Change Font Alert"
         animate={{
           mount: { y: 0 },
           unmount: { y: -100 },
@@ -105,18 +107,20 @@ export default function SiteNav() {
             <Button
             size="sm"
             className="hover:cursor-pointer hover:bg-amber-500/80"
+            aria-label="Change Font Yes"
             onClick={() => fontAlert("Yes")}>
               Yes
             </Button>
             <Button
             size="sm"
             className="hover:cursor-pointer hover:bg-amber-500/80"
+            aria-label="Change Font No"
             onClick={() => fontAlert("No")}>
               No
             </Button>
           </div>
         }>
-          Trouble reading the font?
+          Trouble reading the site?
         </Alert>
       </nav>
     )

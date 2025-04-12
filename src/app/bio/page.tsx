@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function Bio() {
     return (
       <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
-        <main className="flex flex-col gap-[32px] row-start-2">
+        <main id="main" className="flex flex-col gap-[32px] row-start-2">
           <h1 className="hidden">Hans Durchholz&apos;s Bio &amp; Info</h1>
           <div className="">
             *put a good bio and pic here lol!!*

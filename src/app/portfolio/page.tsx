@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 export default function Portfolio() {
     return (
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
-          <main className="flex flex-col gap-[32px] row-start-2">
-            <h1 className="hidden">Hans Durchholz&apos;s Portfolio</h1>
-            <PortfolioEntry id="hansdurchholz.com"
+          <main id="main" className="flex flex-col gap-[32px] row-start-2">
+            <h1 className="text-[0px] absolute">Hans Durchholz&apos;s Portfolio</h1>
+            <PortfolioEntry id="hansdurchholz.com" entry_label="Portfolio Entry 1"
             title={
             <span>
               This website!&nbsp;
@@ -104,7 +104,7 @@ export default function Portfolio() {
               I&apos;m particularly proud of this site&apos;s scalability. My use of custom components and interfaces has allowed for much simpler UI refactoring - a prime example being these portfolio entries and their modular &quot;props.&quot;
             </span>}>
             </PortfolioEntry>
-            <PortfolioEntry id="pros"
+            <PortfolioEntry id="pros" entry_label="Portfolio Entry 2"
             title={
             <Link
             href="https://pros.com/"
@@ -114,10 +114,9 @@ export default function Portfolio() {
               <Image
               src="https://s28006.pcdn.co/wp-content/uploads/2024/07/PROS-dual-Logo-2.svg"
               title="https://pros.com"
-              alt="PROS Icon"
+              alt="PROS Enterprise AI Icon"
               width={200}
               height={0}
-              
               />
             </Link>}
             dates="August 2022 - September 2023"
@@ -141,7 +140,7 @@ export default function Portfolio() {
               I worked on several projects concurrently, each with their own clients and technical constraints. The main focus of my work was SQL/Oracle back-end operations, customer interfacing via scrums and on-call messaging, and documentation/deployments; each listed skill/responsibility made me a vital part of every project I was involved with.
             </span>}>
             </PortfolioEntry>
-            <PortfolioEntry id="glass-bridge"
+            <PortfolioEntry id="glass-bridge" entry_label="Portfolio Entry 3" carousel_label="Glass Bridge Memory Game Slideshow"
             title={
             <span>
               <Link
@@ -222,7 +221,7 @@ export default function Portfolio() {
                 />
               </div>
             </PortfolioEntry>
-            <PortfolioEntry id="dice-roller"
+            <PortfolioEntry id="dice-roller" entry_label="Portfolio Entry 4" carousel_label="D&D Dice Roller Slideshow"
             title={
             <span>
               {/* Link -> a to prevent 404, similar to PDF error */}
@@ -319,7 +318,7 @@ export default function Portfolio() {
                 />
               </div>
             </PortfolioEntry>
-            <PortfolioEntry id="CTRBot"
+            <PortfolioEntry id="CTRBot" entry_label="Portfolio Entry 5" carousel_label="CTRBot Slideshow"
             title="CTRBot"
             dates="September 2019 - July 2020"
             subtitle={
@@ -372,7 +371,7 @@ export default function Portfolio() {
                 />
               </div>
             </PortfolioEntry>
-            <PortfolioEntry id="gensys-consulting"
+            <PortfolioEntry id="gensys-consulting" entry_label="Portfolio Entry 6"
             title="Gensys Consulting, Chesterfield, MO"
             dates="June 2017 - July 2017"
             subtitle="Freelance Backend Scripter"
@@ -383,7 +382,7 @@ export default function Portfolio() {
               Optimized queries, built database schemae, and performed ad-hoc requests on-site.
             </span>}>
             </PortfolioEntry>
-            <PortfolioEntry id="misc-projects-work"
+            <PortfolioEntry id="misc-projects-work" entry_label="Portfolio Entry 7" carousel_label="Miscellaneous Projects Slideshow"
             title="Miscellaneous Projects & Contract Work"
             dates="2015 - 2025"
             subtitle={
