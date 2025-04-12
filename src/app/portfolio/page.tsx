@@ -201,25 +201,19 @@ export default function Portfolio() {
               I also set up a manifest and service workers in order for our game to be a Progressive Web App. This allowed our users to pin the site to their home screens like a normal app, and play offline with local high scores.
               <br />
               Finally, I managed all the bells and whistles pertinent to our scope, including internal/external metadata, documentation, responsive design, and video production for remote presentation.
-            </span>}>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/GlassBridgeGameScreen.png"
-                title="Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
-                alt="Glass Bridge Memory Game - Game Screen"
-                width={350}
-                height={0}
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/GlassBridgeLoginDialogue.png"
-                title="Glass Bridge Memory Game - Login Dialogue. This Material UI dialogue is a form for creating or logging into an account, making API calls to our Flask/Heroku back-end for validation."
-                alt="Glass Bridge Memory Game - Login Dialogue"
-                width={350}
-                height={0}
-                />
-              </div>
+            </span>}
+            images={[
+              [
+                "/GlassBridgeGameScreen.png",
+                "Glass Bridge Memory Game - Game Screen",
+                "Glass Bridge Memory Game - Game Screen (debug screenshot). Shows how the path generation, input, and round systems work."
+              ],
+              [
+                "/GlassBridgeLoginDialogue.png",
+                "Glass Bridge Memory Game - Login Dialogue", 
+                "Glass Bridge Memory Game - Login Dialogue. This Material UI dialogue is a form for creating or logging into an account, making API calls to our Flask/Heroku back-end for validation."
+              ]
+              ]}>
             </PortfolioEntry>
             <PortfolioEntry id="dice-roller" entry_label="Portfolio Entry 4" carousel_label="D&D Dice Roller Slideshow"
             title={
@@ -287,36 +281,23 @@ export default function Portfolio() {
               <br />
               I developed this app for a friend! They were dissatisfied with the customization available in other popular free dice roller apps. Seeing the fruits of my labor with my own eyes in a casual setting was very fulfilling!
             </span>}
-            >
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRoller1.gif"
-                title="Dice Roller tab showcase - Footage of a user rolls 1 of each standard die type, re-rolling a few times, and clearing the output."
-                alt="D&D Dice Roller app - Dice Roller tab gif"
-                width={350}
-                height={0}
-                unoptimized
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRoller2.gif"
-                title="Custom Roller showcase - Footage of the user using the Custom Roller, acting as 'macros' for dice roll and modifier combinations."
-                alt="D&D Dice Roller app - Custom Roller gif"
-                width={350}
-                height={0}
-                unoptimized
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRoller3.png"
-                title="History showcase - Screenshot of the app's history interface, displaying the rolls enacted by the user in prior gifs."
-                alt="D&D Dice Roller app - Roll History"
-                width={350}
-                height={0}
-                />
-              </div>
+            images={[
+              [
+                "/DiceRoller1.gif",
+                "D&D Dice Roller app - Dice Roller tab gif",
+                "Dice Roller tab showcase - Footage of a user rolls 1 of each standard die type, re-rolling a few times, and clearing the output."
+              ],
+              [
+                "/DiceRoller2.gif",
+                "D&D Dice Roller app - Custom Roller gif", 
+                "Custom Roller showcase - Footage of the user using the Custom Roller, acting as 'macros' for dice roll and modifier combinations."
+              ],
+              [
+                "/DiceRoller3.png",
+                "D&D Dice Roller app - Roll History", 
+                "History showcase - Screenshot of the app's history interface, displaying the rolls enacted by the user in prior gifs."
+              ]
+              ]}>
             </PortfolioEntry>
             <PortfolioEntry id="CTRBot" entry_label="Portfolio Entry 5" carousel_label="CTRBot Slideshow"
             title="CTRBot"
@@ -351,25 +332,19 @@ export default function Portfolio() {
               This bot was beta tested and utilized by hundreds of members of competitive CTR communities within discord. I led the development team of 2 other developers, teaching them Git, Python, Linux Operations, JSON, the works!
               <br />
               While the bot is now out of commission due to an inactive community, this was a very fun and fulfilling project. I love collaborating and making useful tools!
-            </span>}>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/CTRBot%20SC1.png"
-                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
-                alt="Discord Screenshot - CTRBot track command"
-                width={350}
-                height={0}
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/CTRBot%20SC2.png"
-                title="A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard."
-                alt="Discord Screenshot - CTRBot record commands"
-                width={350}
-                height={0}
-                />
-              </div>
+            </span>}
+            images={[
+              [
+                "/CTRBot%20SC1.png",
+                "Discord Screenshot - CTRBot track command", 
+                "A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
+              ],
+              [
+                "/CTRBot%20SC2.png",
+                "A screenshot of a Discord Chat window between a user and CTRBot, showcasing the bot's aggregation and display of top track times submitted to CrashTeamRanking.com. The bot outputs a neatly formatted embedded message containing all the information and hyperlinks present on that track's leaderboard.", 
+                "Discord Screenshot - CTRBot record commands"
+              ]
+            ]}>
             </PortfolioEntry>
             <PortfolioEntry id="gensys-consulting" entry_label="Portfolio Entry 6"
             title="Gensys Consulting, Chesterfield, MO"
@@ -477,25 +452,19 @@ export default function Portfolio() {
                 Microsoft Excel
               </Link>
               &nbsp;- and am remarkably proficient with the Software as a result of that and my professional work.
-            </span>}>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/MTG%20SLO.png"
-                title="MTG: Statistical Land Optimization - UI for senior capstone project"
-                alt="Screenshot of Hans's old app - MTG: Statistical Land Optimization"
-                width={350}
-                height={0}
-                />
-              </div>
-              <div className='flex h-full justify-center items-center'>
-                <Image
-                src="/DiceRollerBeta.png"
-                title="D&D Dice Roller Mockup made with Python's UI framework 'tkinter.' Same functionality as the final Flutter app, with a much rougher visual design."
-                alt="D&D Dice Roller Mockup Python tkinter"
-                width={350}
-                height={0}
-                />
-              </div>
+            </span>}
+            images={[
+              [
+                "/MTG%20SLO.png",
+                "MTG: Statistical Land Optimization - UI for senior capstone project", 
+                "Screenshot of Hans's old app - MTG: Statistical Land Optimization"
+              ],
+              [
+                "/DiceRollerBeta.png",
+                "D&D Dice Roller Mockup made with Python's UI framework 'tkinter.' Same functionality as the final Flutter app, with a much rougher visual design.", 
+                "D&D Dice Roller Mockup Python tkinter"
+              ]
+            ]}>
             </PortfolioEntry>
           </main>
         </div>

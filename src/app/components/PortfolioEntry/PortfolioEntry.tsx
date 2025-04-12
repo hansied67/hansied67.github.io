@@ -1,6 +1,6 @@
 'use client';
 
-import { Children } from "react";
+import Image from "next/image";
 import CustomCarousel from "../CustomCarousel/CustomCarousel";
 
 interface PortfolioProps {
@@ -11,8 +11,9 @@ interface PortfolioProps {
   subtitle?: string | React.ReactElement,
   description: string | React.ReactElement,
   id?: string | undefined,
-  entry_label?: string | undefined
-  carousel_label?: string | undefined
+  entry_label?: string | undefined,
+  carousel_label?: string | undefined,
+  images?: Array<Array<string>>
 }
 
 
@@ -20,6 +21,20 @@ interface PortfolioProps {
 export default function PortfolioEntry(
   props: PortfolioProps) {
     const portClass = (props.className ? "portfolio-entry " + props.className : "portfolio-entry scroll-mt-[92px] md:scroll-mt-[76px]")
+
+    const imageArray = props.images?.map((item, index) => (
+      <div key={index} className="flex h-full justify-center items-center">
+        <Image
+        src={item[0]}
+        alt={item[1]}
+        title={item[2]}
+        width={350}
+        height={0}
+        unoptimized
+        />
+      </div>
+    ))
+
     return (
       <div className={portClass} id={props.id}>
         <div className="sr-only">{props.entry_label}</div>
@@ -34,13 +49,14 @@ export default function PortfolioEntry(
             </div>
           </div>
           {/* Conditionally render nothing if no children, image if single child, carousel if multiple children. */}
-          { !props.children ? <div /> :
+          { !props.images ? <div /> :
           <div className="mx-auto my-auto min-w-[350px] max-w-[350px]">
-            { Children.count(props.children) !== 1 ? 
+            { Object.keys(props.images).length !== 1 ? 
             <CustomCarousel title={props.carousel_label} className="border-1 rounded-lg shadow-lg md:mb-2 items-center">
-              {props.children}
+              {/* {props.children} */}
+              {imageArray}
             </CustomCarousel>
-            : props.children
+            : imageArray
             }
           </div> }
         </div>
