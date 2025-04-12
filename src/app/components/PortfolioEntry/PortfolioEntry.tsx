@@ -26,7 +26,7 @@ export default function PortfolioEntry(
               <h1 className="font-bold text-lg md:text-6xl">{props.title}</h1>
               <h2 className="text-sm md:text-2xl">{props.subtitle}</h2>
               <h2 className="text-xs md:text-lg text-[var(--foreground)]/80"><b>{props.dates}</b></h2>
-              <br />
+              <div><br /></div>
               <h2 className="mt-auto text-sm md:text-xl">{props.description}</h2>
             </div>
           </div>
