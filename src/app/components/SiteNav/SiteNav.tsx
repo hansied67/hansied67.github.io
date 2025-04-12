@@ -96,6 +96,10 @@ export default function SiteNav() {
         <Alert
         open={open}
         className="font-serif mx-auto max-w-screen-md"
+        animate={{
+          mount: { y: 0 },
+          unmount: { y: -100 },
+        }}
         action={
           <div className="ml-auto">
             <Button
