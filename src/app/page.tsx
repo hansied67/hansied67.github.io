@@ -101,6 +101,7 @@ export default function Home() {
                 width={256}
                 height={256}
                 unoptimized
+                loading="eager"
                 />
               </ImageHoverSwap>
               <div className="text-xs text-[var(--foreground)]/80 -translate-y-[22px] text-center">
