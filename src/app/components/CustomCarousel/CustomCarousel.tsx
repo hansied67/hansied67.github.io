@@ -10,6 +10,8 @@ interface CarouselProps {
 
 
 // Custom Carousel component for easy refactoring, will be re-used often
+// Aria documentation for screen readers & keyboard controls:
+//     https://www.w3.org/TR/wai-aria-1.1/
 export default function CustomCarousel(props: CarouselProps) {
     const carouselTitle = props.title ? props.title : "Image Carousel Component";
 
@@ -19,8 +21,8 @@ export default function CustomCarousel(props: CarouselProps) {
           <Carousel
           {...props}
           loop={true}
-          role="listbox"
-          aria-orientation="horizontal"
+          aria-roledescription="carousel"
+          aria-label={carouselTitle}
           prevArrow={({ handlePrev }) => (
             <IconButton
               variant="text"
@@ -50,11 +52,12 @@ export default function CustomCarousel(props: CarouselProps) {
             </IconButton>
           )}
           navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+            <div role="tablist" aria-label="Choose slide to display" className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
               {new Array(length).fill("").map((_, i) => (
                 <span
                   key={i}
-                  role="option"
+                  role="tab"
+                  aria-label={carouselTitle + " Jump to Slide " + (i+1).toString()}
                   aria-selected={activeIndex === i ? true : false}
                   className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
                     activeIndex === i ? "w-8 bg-amber-500" : "w-4 bg-amber-500/50"

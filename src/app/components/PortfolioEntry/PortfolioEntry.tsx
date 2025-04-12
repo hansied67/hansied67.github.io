@@ -22,8 +22,9 @@ export default function PortfolioEntry(
   props: PortfolioProps) {
     const portClass = (props.className ? "portfolio-entry " + props.className : "portfolio-entry scroll-mt-[92px] md:scroll-mt-[76px]")
 
+    const imageLength = props.images?.length;
     const imageArray = props.images?.map((item, index) => (
-      <div key={index} className="flex h-full justify-center items-center">
+      <div key={index} role="tabpanel" aria-label={(index+1) + " of " + imageLength} className="flex h-full justify-center items-center">
         <Image
         src={item[0]}
         alt={item[1]}
