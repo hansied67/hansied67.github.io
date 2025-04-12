@@ -29,7 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: "https://hansdurchholz.com/docs/HansDurchholz-Resume.pdf",
             lastModified: new Date(),
             changeFrequency: 'yearly',
-            priority: 0.8
+            priority: 0.8,
+            images: ['https://hansdurchholz.com/HansDurchholz-Resume.pdf.png']
         }
     ]
 }
