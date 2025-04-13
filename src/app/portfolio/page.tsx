@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function Portfolio() {
     return (
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
-          <main id="main" className="flex flex-col gap-[32px] row-start-2">
+          <main id="main" className="flex flex-col gap-[32px] row-start-2 scroll-mt-[92px] md:scroll-mt-[76px]">
             <h1 className="sr-only">Hans Durchholz&apos;s Portfolio</h1>
             <PortfolioEntry id="hansdurchholz.com" entry_label="Portfolio Entry 1"
             title={
@@ -337,7 +337,7 @@ export default function Portfolio() {
               [
                 "/CTRBot%20SC1.png",
                 "Discord Screenshot - CTRBot track command", 
-                "A screenshot of a Discord Chat window between a user and CTRBot, showcasing track generation. The bot outputs an image of a set amount of tracks with their names using CTR's font, stacked horizontally. The amount of tracks and the pool of tracks to choose from are determined by the user's input."
+                "A screenshot of a Discord Chat window between a user and CTRBot. CTRBot returns a concatenated image of 8 tracks in the user's specified track pool."
               ],
               [
                 "/CTRBot%20SC2.png",
