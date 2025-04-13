@@ -91,7 +91,7 @@ export default function SiteNav() {
                       </Link>
                     : <Link href="#main"
                       role="menuitem"
-                      className="site-nav text-sm md:text-lg font-bold ml-6 p-2 text-amber-500">
+                      className="site-nav text-sm md:text-lg font-bold ml-6 p-2 text-amber-500 rounded-lg">
                         {item.name}
                       </Link>
                   }  
