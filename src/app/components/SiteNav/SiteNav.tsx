@@ -5,12 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Alert, Button } from "../MaterialWrapper/MaterialWrapper";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 // Custom Navbar component for easy refactoring
 export default function SiteNav() {
     const [open, setOpen] = useState(true);
+    const navRef = useRef<HTMLDivElement | null>(null);
+    const tabRef = useRef<HTMLAnchorElement | null>(null);
 
     const pathname = usePathname();
 
@@ -18,6 +20,7 @@ export default function SiteNav() {
         { name: "Home", href: "/" },
         { name: "Portfolio", href: "/portfolio" },
         { name: "Bio", href: "/bio" },
+        { name: "Contact", href: "https://www.linkedin.com/in/hdurchholz/"}
     ];
     
     // First-time visit, goes away no matter what choice
@@ -35,7 +38,65 @@ export default function SiteNav() {
           setOpen(false);
         }, 10000);
       }
-    }, [])
+    }, []);
+
+    // WAI-ARIA keyboard navigation
+    useEffect(() => {
+      const navElement = navRef.current as HTMLDivElement | null;
+      let tabElement = tabRef.current as HTMLAnchorElement | null;
+
+      function getPrevSibling(currentElement?: HTMLAnchorElement | null) {
+        const element = currentElement == null ? tabElement : currentElement;
+
+        if (element?.parentElement?.previousElementSibling == null) {
+          return navElement?.lastElementChild?.firstChild as HTMLAnchorElement | null;
+        }
+        return element?.parentElement?.previousElementSibling?.firstChild as HTMLAnchorElement | null;
+      }
+      function getNextSibling(currentElement?: HTMLAnchorElement | null) {
+        const element = currentElement == null ? tabElement : currentElement;
+        
+        if (element?.parentElement?.nextElementSibling == null) {
+          return navElement?.firstElementChild?.firstChild as HTMLAnchorElement | null;
+        }
+        return element?.parentElement?.nextElementSibling?.firstChild as HTMLAnchorElement | null;
+      }
+      
+      let prevSibling = getPrevSibling();
+      let nextSibling = getNextSibling();
+
+      const handleInput = (e: KeyboardEvent) => {
+        switch (e.code) {
+          case "ArrowLeft":
+            prevSibling?.focus();
+            tabElement = getPrevSibling()
+            prevSibling = getPrevSibling();
+            nextSibling = getNextSibling();
+            break;
+          case "ArrowRight":
+            nextSibling?.focus();
+            tabElement = getNextSibling();
+            prevSibling = getPrevSibling();
+            nextSibling = getNextSibling();
+            break;
+        }
+      }
+
+      const handleFocus = () => {
+        tabElement = tabRef.current as HTMLAnchorElement | null;
+        tabElement?.focus();
+        prevSibling = getPrevSibling();
+        nextSibling = getNextSibling();
+      }
+
+      navElement?.addEventListener('keydown', handleInput);
+      navElement?.addEventListener('focus', handleFocus);
+
+      return () => {
+        navElement?.removeEventListener('keydown', handleInput);
+        navElement?.removeEventListener('focus', handleFocus);
+      }
+    }, [navItems.length])
 
     function fontAlert(decision: string) {
       setOpen(false);
@@ -57,7 +118,7 @@ export default function SiteNav() {
     return (
       <div className="fixed w-full z-20 top-0 start-0" aria-label="Site Header">
         <div className="backdrop-blur bg-opacity-30">
-        <a className="fixed -translate-y-full focus:translate-y-0 ml-2" href="#main">Skip to Content</a>
+        <a id="skip" className="fixed -translate-y-full focus:translate-y-0 ml-2" href="#main">Skip to Content</a>
           <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <div role="banner" className="flex flex-1 items-center mx-auto">
               <Image
@@ -76,6 +137,7 @@ export default function SiteNav() {
             </div>
             <div role="menubar" aria-label="Site Navigation"
             className="flex flex-2 justify-end"
+            ref={navRef} tabIndex={0}
             >
               {navItems.map((item, index) => (
                 <div
@@ -86,25 +148,20 @@ export default function SiteNav() {
                   {item.href != pathname
                     ? <Link href={item.href}
                       role="menuitem"
+                      tabIndex={-1}
                       className="site-nav text-sm md:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">
                       {item.name}
                       </Link>
                     : <Link href="#main"
                       role="menuitem"
+                      tabIndex={-1}
+                      ref={tabRef}
                       className="site-nav text-sm md:text-lg font-bold ml-6 p-2 text-amber-500 rounded-lg">
                         {item.name}
                       </Link>
                   }  
                 </div>
               ))}
-              <div className="flex justify-end">
-                <Link href="https://www.linkedin.com/in/hdurchholz/"
-                role="menuitem"
-                target="_blank"
-                className="site-nav text-sm md:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">
-                  Contact
-                </Link>
-              </div>
             </div>
           </nav>
         </div>
