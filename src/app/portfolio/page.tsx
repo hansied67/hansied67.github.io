@@ -182,11 +182,11 @@ export default function Portfolio() {
               target="_blank">
                 Netflix
               </Link>
-              &nbsp;series
+              &nbsp;series&nbsp;
               <Link
               href="https://www.netflix.com/title/81040344"
               target="_blank">
-                &nbsp;Squid Game
+                Squid Game
               </Link>
               .
             </span>}
@@ -304,11 +304,11 @@ export default function Portfolio() {
             dates="September 2019 - July 2020"
             subtitle={
             <span>
-              A discord bot written in python interfacing with
+              A discord bot written in python interfacing with&nbsp;
               <Link
               href="https://crashteamranking.com/"
               target="_blank">
-                &nbsp;Crash Team Ranking&apos;s
+                Crash Team Ranking&apos;s
               </Link>
               &nbsp;back-end, a tool for&nbsp;
               <Link

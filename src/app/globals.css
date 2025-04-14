@@ -35,7 +35,27 @@ body {
 }
 
 @layer base {
+
   a:not(.site-nav) {
-    @apply text-amber-500 hover:text-green-500
+    @apply 
+    text-amber-500
+    hover:text-green-500
+  }
+  a:not(.site-nav):focus-visible, div:focus-visible, button:focus-visible {
+    @apply
+  text-green-500
+    bg-(--color-background)/50
+    outline-1
+    outline-amber-500
+  }
+  /* a:not(.site-nav):focus {
+    @apply text-green-500
+  } */
+  .site-nav:focus-visible {
+    @apply 
+    text-amber-500
+    bg-(--color-background)/50
+    outline
+    outline-amber-500
   }
 }

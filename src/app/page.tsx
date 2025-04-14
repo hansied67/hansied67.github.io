@@ -70,10 +70,10 @@ export default function Home() {
             <br />
             I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!
             <br />
-            Learn more in my
-            <Link href="/bio">&nbsp;extended bio</Link>
-            ,
-            <Link href="/portfolio">&nbsp;portfolio</Link>
+            Learn more in my&nbsp;
+            <Link href="/bio">extended bio</Link>
+            ,&nbsp;
+            <Link href="/portfolio">portfolio</Link>
             , or&nbsp;
             <Link href="https://www.linkedin.com/in/hdurchholz/" target="_blank">contact me!</Link>
           </h2>
