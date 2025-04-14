@@ -11,6 +11,7 @@ import { useEffect, useRef, useState } from "react";
 // Custom Navbar component for easy refactoring
 export default function SiteNav() {
     const [open, setOpen] = useState(true);
+    const [isFocus, setFocus] = useState(false);
     const navRef = useRef<HTMLDivElement | null>(null);
     const tabRef = useRef<HTMLAnchorElement | null>(null);
 
@@ -65,38 +66,72 @@ export default function SiteNav() {
       let prevSibling = getPrevSibling();
       let nextSibling = getNextSibling();
 
+      const pressedKeys = new Map<string, boolean>(new Map());
+      const handleGlobalInput = (e : KeyboardEvent) => {
+        pressedKeys.set(e.code, true);
+      }
       const handleInput = (e: KeyboardEvent) => {
-        switch (e.code) {
-          case "ArrowLeft":
-            prevSibling?.focus();
-            tabElement = getPrevSibling()
-            prevSibling = getPrevSibling();
-            nextSibling = getNextSibling();
-            break;
-          case "ArrowRight":
+        pressedKeys.set(e.code, true);
+        if (e.code === "ArrowLeft") {
+          prevSibling?.focus();
+          tabElement = getPrevSibling()
+          prevSibling = getPrevSibling();
+          nextSibling = getNextSibling();
+        }
+        else if(e.code === "ArrowRight") {
             nextSibling?.focus();
             tabElement = getNextSibling();
             prevSibling = getPrevSibling();
             nextSibling = getNextSibling();
-            break;
         }
+
+        console.log(pressedKeys);
+        if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab") && !isFocus) {
+          console.log("a");
+          navElement?.focus();
+        }
+        else if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab") && isFocus) {
+          console.log("b");
+          document.getElementById("skip")?.focus();
+        }
+
+        if (pressedKeys.get("Tab")) {
+          // TODO: why
+          setFocus(false);
+        }
+      }
+      const removeInput = (e: KeyboardEvent) => {
+        pressedKeys.delete(e.code)
       }
 
       const handleFocus = () => {
+        setFocus(true);
         tabElement = tabRef.current as HTMLAnchorElement | null;
         tabElement?.focus();
         prevSibling = getPrevSibling();
         nextSibling = getNextSibling();
       }
 
+      const handleBlur = () => {
+        pressedKeys.clear();
+      }
+
+      document?.addEventListener('keyup', removeInput);
+      document?.addEventListener('keydown', handleGlobalInput);
+      // navElement?.addEventListener('keyup', removeInput);
       navElement?.addEventListener('keydown', handleInput);
       navElement?.addEventListener('focus', handleFocus);
+      navElement?.addEventListener('blur', handleBlur);
 
       return () => {
+        // document?.removeEventListener('keyup', removeInput);
+        // document?.removeEventListener('keydown', handleGlobalInput);
         navElement?.removeEventListener('keydown', handleInput);
         navElement?.removeEventListener('focus', handleFocus);
+        navElement?.removeEventListener('blur', handleBlur);
+        setFocus(false);
       }
-    }, [navItems.length])
+    }, [navItems.length, isFocus])
 
     function fontAlert(decision: string) {
       setOpen(false);
@@ -122,7 +157,7 @@ export default function SiteNav() {
           <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <div role="banner" className="flex flex-1 items-center mx-auto">
               <Image
-                className="mx-1 mt-1 mb-1 md:mb-0 size-[48px] md:size-[64px]"
+                className="p-0 md:p-0.5 size-[48px] md:size-[64px]"
                 src="/Bob%20Ross.png"
                 title="32x32 pixel art of lakeside mountains made by Hans in Aseprite."
                 alt="Lakeside mountains pixel art"
