@@ -63,20 +63,19 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <h2 className="text-lg">
-            Thanks for checking out my site!
-            <br />
-            I&apos;m a full-stack software developer/consultant with a Bachelor&apos;s degree in Computer Science. I have professional experience building and maintaining back-ends in customer-facing agile roles for fortune 500 companies.
-            <br />
-            I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!
-            <br />
-            Learn more in my&nbsp;
-            <Link href="/bio">extended bio</Link>
-            ,&nbsp;
-            <Link href="/portfolio">portfolio</Link>
-            , or&nbsp;
-            <Link href="https://www.linkedin.com/in/hdurchholz/" target="_blank">contact me!</Link>
-          </h2>
+          <div className="text-lg">
+            <h2>Thanks for checking out my site!</h2>
+            <p>I&apos;m a full-stack software developer/consultant with a Bachelor&apos;s degree in Computer Science. I have professional experience building and maintaining back-ends in customer-facing agile roles for fortune 500 companies.</p>
+            <p>I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!</p>
+            <p>
+              Learn more in my&nbsp;
+              <Link href="/bio">extended bio</Link>
+              ,&nbsp;
+              <Link href="/portfolio">portfolio</Link>
+              , or&nbsp;
+              <Link href="https://www.linkedin.com/in/hdurchholz/" target="_blank">contact me!</Link>
+            </p>
+          </div>
           <div className="grid grid-cols-1 justify-items-center">
             <Link
             className="hover:bg-(--color-background)/50 rounded-2xl"
@@ -107,30 +106,32 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          Please enjoy these lovely pictures of me and my dog Heidi!
-          <div className="flex flex-col xl:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
-            <Image
-            src="/Heidi1.jpg"
-            title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
-            alt="Heidi Dog 1"
-            width={400}
-            height={400}
-            />
-            <Image
-            src="/HeidiHans.jpg"
-            title="Hans with his adorable dog Heidi, a German Shepherd Mix with fawn and brindle fur."
-            alt="Hans & his dog Heidi"
-            width={400}
-            height={400}
-            />
-            <Image
-            src="/Heidi2.jpg"
-            title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is being pet while on her doggy bed, eyes glowing from the camera's flash."
-            alt="Heidi Dog 2"
-            width={400}
-            height={400}
-            priority
-            />
+          <div role="complementary" aria-label="Heidi Dog Pics!!">
+          <h3>Please enjoy these lovely pictures of me and my dog Heidi!</h3>
+            <div className="flex flex-col xl:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
+              <Image
+              src="/Heidi1.jpg"
+              title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
+              alt="Hans's dog Heidi sleeping"
+              width={400}
+              height={400}
+              />
+              <Image
+              src="/HeidiHans.jpg"
+              title="Hans with his adorable dog Heidi, a German Shepherd Mix with fawn and brindle fur."
+              alt="Hans & his dog Heidi"
+              width={400}
+              height={400}
+              />
+              <Image
+              src="/Heidi2.jpg"
+              title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is being pet while on her doggy bed, eyes glowing from the camera's flash."
+              alt="Hans's dog Heidi being patted on the head"
+              width={400}
+              height={400}
+              priority
+              />
+            </div>
           </div>
         </div>
       </main>

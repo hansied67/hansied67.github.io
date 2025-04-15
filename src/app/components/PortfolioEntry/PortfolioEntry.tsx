@@ -24,7 +24,7 @@ export default function PortfolioEntry(
 
     const imageLength = props.images?.length;
     const imageArray = props.images?.map((item, index) => (
-      <div key={index} role="tabpanel" aria-label={(index+1) + " of " + imageLength} className="flex h-full justify-center items-center">
+      <div key={index} role="tabpanel" aria-label={"Slide " + (index+1) + " of " + imageLength} className="flex h-full justify-center items-center">
         <Image
         src={item[0]}
         alt={item[1]}
@@ -37,7 +37,7 @@ export default function PortfolioEntry(
     ))
 
     return (
-      <div className={portClass} id={props.id}>
+      <div className={portClass} id={props.id} role="article" aria-label={props.entry_label}>
         <div className="sr-only">{props.entry_label}</div>
         <div className="flex flex-col xl:flex-row gap-2 border-2 shadow-lg rounded-xl p-2">
           <div className="flex flex-row py-2 pl-2">
@@ -45,8 +45,8 @@ export default function PortfolioEntry(
               <h2 className="font-bold text-lg md:text-6xl">{props.title}</h2>
               <h3 className="text-sm md:text-2xl">{props.subtitle}</h3>
               <h4 className="text-xs md:text-lg text-[var(--foreground)]/80"><b>{props.dates}</b></h4>
-              <div><br /></div>
-              <div className="mt-auto text-sm md:text-xl">{props.description}</div>
+              <br role="none" />
+              <p className="mt-auto text-sm md:text-xl">{props.description}</p>
             </div>
           </div>
           {/* Conditionally render nothing if no children, image if single child, carousel if multiple children. */}

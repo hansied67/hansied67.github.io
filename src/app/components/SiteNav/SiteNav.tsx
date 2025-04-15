@@ -133,6 +133,7 @@ export default function SiteNav() {
       }
     }, [navItems.length, isFocus])
 
+    // TODO reset cursor, CSS variables
     function fontAlert(decision: string) {
       setOpen(false);
       window.localStorage.setItem("font-prompt", decision);
@@ -151,11 +152,11 @@ export default function SiteNav() {
     }
 
     return (
-      <div className="fixed w-full z-20 top-0 start-0" aria-label="Site Header">
+      <header className="fixed w-full z-20 top-0 start-0" aria-label="Site Header">
         <div className="backdrop-blur bg-opacity-30">
         <a id="skip" className="fixed -translate-y-full focus:translate-y-0 ml-2" href="#main">Skip to Content</a>
-          <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-            <div role="banner" className="flex flex-1 items-center mx-auto">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+            <div role="complementary" aria-label="Banner Title" className="flex flex-1 items-center mx-auto">
               <Image
                 className="p-0 md:p-0.5 size-[48px] md:size-[64px]"
                 src="/Bob%20Ross.png"
@@ -167,10 +168,10 @@ export default function SiteNav() {
               />
               <div className="">
                 <span className="mx-2 text-base md:text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
-                <div className="mx-2 text-sm md:text-base whitespace-nowrap">Software Developer, Consultant</div>
+                <span className="mx-2 text-sm md:text-base whitespace-nowrap">Software Developer, Consultant</span>
               </div>
             </div>
-            <div role="menubar" aria-label="Site Navigation"
+            <div role="navigation" aria-label="Site Navigation"
             className="flex flex-2 justify-end"
             ref={navRef} tabIndex={0}
             >
@@ -182,13 +183,13 @@ export default function SiteNav() {
                 >
                   {item.href != pathname
                     ? <Link href={item.href}
-                      role="menuitem"
+                      aria-label={"Open " + item.name}
                       tabIndex={-1}
                       className="site-nav text-sm md:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">
                       {item.name}
                       </Link>
                     : <Link href="#main"
-                      role="menuitem"
+                      aria-label={"Current Page (" + item.name + ")"}
                       tabIndex={-1}
                       ref={tabRef}
                       className="site-nav text-sm md:text-lg font-bold ml-6 p-2 text-amber-500 rounded-lg">
@@ -198,7 +199,7 @@ export default function SiteNav() {
                 </div>
               ))}
             </div>
-          </nav>
+          </div>
         </div>
         <Alert
         open={open}
@@ -228,6 +229,6 @@ export default function SiteNav() {
         }>
           Trouble reading the site?
         </Alert>
-      </div>
+      </header>
     )
 }

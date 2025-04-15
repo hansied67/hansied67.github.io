@@ -13,22 +13,25 @@ interface CarouselProps {
 // Aria documentation for screen readers & keyboard controls:
 //     https://www.w3.org/TR/wai-aria-1.1/
 export default function CustomCarousel(props: CarouselProps) {
-    const carouselTitle = props.title ? props.title : "Image Carousel Component";
+    const carouselTitle = props.title ? props.title : "Portfolio Entry Slideshow";
+    const carouselId = props.title ? props.title.replace(/\s+/g, "-") : props.title; 
 
     return (
         <div>
-          <div className="sr-only">{carouselTitle}</div>
           <Carousel
           {...props}
+          id={carouselId}
           loop={true}
-          aria-roledescription="carousel"
+          aria-roledescription="Portfolio Slideshow"
           aria-label={carouselTitle}
+          role="region"
           prevArrow={({ handlePrev }) => (
             <IconButton
               variant="text"
               color="amber"
               size="lg"
-              aria-label={carouselTitle + " Back"}
+              aria-label={"Previous slide"}
+              aria-controls={carouselId}
               onClick={handlePrev}
               className="!absolute top-2/4 left-2 -translate-y-2/4"
             >
@@ -42,7 +45,8 @@ export default function CustomCarousel(props: CarouselProps) {
               variant="text"
               color="amber"
               size="lg"
-              aria-label={carouselTitle + " Next"}
+              aria-label={"Next slide"}
+              aria-controls={carouselId}
               onClick={handleNext}
               className="!absolute top-2/4 !right-2 -translate-y-2/4"
             >
@@ -52,12 +56,13 @@ export default function CustomCarousel(props: CarouselProps) {
             </IconButton>
           )}
           navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div role="tablist" aria-label="Choose slide to display" className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+            <ul role="tablist" aria-label="Choose slide to display" className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
               {new Array(length).fill("").map((_, i) => (
-                <div
+                <li
                   key={i}
                   role="tab"
                   aria-label={carouselTitle + " Jump to Slide " + (i+1).toString()}
+                  aria-controls={carouselId}
                   aria-selected={activeIndex === i ? true : false}
                   className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
                     activeIndex === i ? "w-8 bg-amber-500" : "w-4 bg-amber-500/50"
@@ -65,7 +70,7 @@ export default function CustomCarousel(props: CarouselProps) {
                   onClick={() => setActiveIndex(i)}
                 />
               ))}
-            </div>
+            </ul>
           )}
           >
             {props.children}

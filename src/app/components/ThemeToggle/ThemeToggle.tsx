@@ -55,7 +55,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         setTheme(!isDark);
     }
 
-    const darkButton = <button className="rounded-2xl h-full" aria-label="Light mode toggle button" onClick={toggleTheme}>
+    const darkButton = <button className="rounded-2xl h-full" aria-label="Light mode toggle button" aria-controls="main" onClick={toggleTheme}>
       <Image
         className="opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-2xl"
         src="/Moon.png"
@@ -65,7 +65,7 @@ export default function ThemeToggle(props: { className: string | undefined; }) {
         loading="eager"
       />
     </button>
-    const lightButton = <button className="rounded-2xl h-full" aria-label="Dark mode toggle button" onClick={toggleTheme}>
+    const lightButton = <button className="rounded-2xl h-full" aria-label="Dark mode toggle button" aria-controls="main" onClick={toggleTheme}>
       <Image
         className="opacity-80 hover:opacity-100 hover:bg-(--color-background)/50 rounded-2xl"
         src="/Sun.png"

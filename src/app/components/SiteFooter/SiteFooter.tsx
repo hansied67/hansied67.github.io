@@ -7,11 +7,11 @@ import TextToggle from "../TextToggle/TextToggle";
 
 export default function SiteFooter() {
     return(
-        <footer className="fixed w-full bottom-0 items-stretch backdrop-blur">
+        <footer aria-label="Site Footer with Theme Toggles" className="fixed w-full bottom-0 items-stretch backdrop-blur">
           <div className="max-w-screen-xl flex mx-auto">
             <ThemeToggle className="flex flex-2 justify-end"/>
-            <div className="flex flex-6 justify-center flex-col text-xs lg:text-base">
-              <div className="text-center justify-items-center">Coded with&nbsp;
+            <div role="complementary" aria-label="Site Info" className="flex flex-6 justify-center flex-col text-xs lg:text-base">
+              <p className="text-center justify-items-center">Coded with&nbsp;
                 <Link
                 href="https://nextjs.org/"
                 target="_blank">
@@ -38,6 +38,7 @@ export default function SiteFooter() {
                 . ©&nbsp;
                 <Link
                 href="https://github.com/hansied67/hansied67.github.io/blob/main/LICENSE"
+                aria-label="Site Github License"
                 target="_blank">
                   2025
                 </Link>
@@ -47,8 +48,8 @@ export default function SiteFooter() {
                 target="_blank">
                   Hans Durchholz
                 </Link>
-              </div>
-              <div className="text-center justify-items-center">
+              </p>
+              <p className="text-center justify-items-center">
                 <Link
                 href="https://chevyray.itch.io/pixel-font-banter"
                 target="_blank">
@@ -66,7 +67,7 @@ export default function SiteFooter() {
                 target="_blank">
                     [LICENSE]
                 </Link>
-              </div>
+              </p>
             </div>
             <TextToggle className="flex flex-2"/>
           </div>

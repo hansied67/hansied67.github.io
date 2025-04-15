@@ -46,7 +46,7 @@ export default function RootLayout({
       <body
         className={`${banter.className} ${geistSans.variable} antialiased`}
       >
-        <div id="root-container">
+        <div id="root-container" role="none">
           <SiteNav />
           {children}
           <SiteFooter />
