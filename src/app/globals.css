@@ -32,6 +32,8 @@ body {
   /* font-family: var(--font-sans); */
   /* background-blend-mode: difference; */
   background-size: cover;
+  /* cursor: url("/curs.png") 3 3, pointer;
+  cursor-pointer: url("/curs.png"), pointer */
 }
 
 @layer base {
@@ -57,5 +59,13 @@ body {
     bg-(--color-background)/50
     outline
     outline-amber-500
+  }
+
+  *, *:before, *:after {
+    @apply cursor-default;
+  }
+
+  a, button {
+    @apply cursor-pointer;
   }
 }
