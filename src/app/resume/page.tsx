@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { permanentRedirect } from "next/navigation";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Hans Durchholz - Resume",
@@ -32,6 +32,6 @@ export const metadata: Metadata = {
 
 export default function Resume() {
   return (
-    permanentRedirect('/docs/HansDurchholz-Resume.pdf')
+    redirect('/docs/HansDurchholz-Resume.pdf')
   )
 }
