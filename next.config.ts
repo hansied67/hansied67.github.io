@@ -30,6 +30,23 @@ const nextConfig: NextConfig = {
   },
 
   productionBrowserSourceMaps: true,
+
+  async redirects() {
+    return [
+      // Ensure search engines never index this. Should be unnecessary!
+      // https://search.google.com/search-console/index
+      {
+        source: "/HansDurchholz-Resume.pdf",
+        destination: "/docs/HansDurchholz-Resume.pdf",
+        permanent: true
+      },
+      {
+        source: "/resume",
+        destination: "/docs/HansDurchholz-Resume.pdf",
+        permanent: true
+      }
+    ]
+  }
 };
 
 export default nextConfig;
