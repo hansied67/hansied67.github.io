@@ -167,8 +167,8 @@ export default function SiteNav() {
                 priority
               />
               <div className="">
-                <span className="mx-2 text-base md:text-2xl font-bold whitespace-nowrap">Hans Durchholz</span>
-                <span className="mx-2 text-sm md:text-base whitespace-nowrap">Software Developer, Consultant</span>
+                <p className="mx-2 text-base md:text-2xl font-bold whitespace-nowrap">Hans Durchholz</p>
+                <p className="mx-2 text-sm md:text-base whitespace-nowrap">Software Developer, Consultant</p>
               </div>
             </div>
             <div role="navigation" aria-label="Site Navigation"
