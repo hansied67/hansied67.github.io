@@ -7,8 +7,8 @@ export default withMT({
   theme: {
     extend: {
       cursor: {
-        default: 'url("/curs.png") 3 3, auto',
-        pointer: 'url("/favicon.ico") 3 3, pointer',
+        // default: 'url("/curs.png") 3 3, auto',
+        // pointer: 'url("/favicon.ico") 3 3, pointer',
         // text: 'url("/favicon.ico") 3 3, text'
       }
     },
