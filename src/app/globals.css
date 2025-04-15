@@ -61,11 +61,17 @@ body {
     outline-amber-500
   }
 
-  *, *:before, *:after {
+  html {
     @apply cursor-default;
   }
-
   a, button {
     @apply cursor-pointer;
   }
+  button span {
+    @apply cursor-pointer;
+  }
+  h1, h2, span, p {
+    @apply cursor-text;
+  }
+
 }
