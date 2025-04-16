@@ -111,29 +111,33 @@ export default function Home() {
             </Link>
           </div>
           <div role="complementary" aria-label="Heidi Dog Pics!!">
-          <h3>Please enjoy these lovely pictures of me and my dog Heidi!</h3>
-            <div className="flex flex-col xl:flex-row divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4">
+            <br role="none" />
+            <h3 className="text-center">Please enjoy these lovely pictures of me and my dog Heidi!</h3>
+            <div className="flex flex-col 2xl:flex-row divide-y-2 2xl:divide-x-2 2xldivide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4 items-center">
               <Image
               src="/Heidi1.jpg"
               title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
               alt="Hans's dog Heidi sleeping"
-              width={400}
-              height={400}
+              width={450}
+              height={800}
+              className="w-[450px] h-[800px]"
               />
               <Image
               src="/HeidiHans.jpg"
               title="Hans with his adorable dog Heidi, a German Shepherd Mix with fawn and brindle fur."
               alt="Hans & his dog Heidi"
-              width={400}
-              height={400}
+              width={450}
+              height={800}
+              className="w-[450px] h-[800px]"
               />
               <Image
               src="/Heidi2.jpg"
               title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is being pet while on her doggy bed, eyes glowing from the camera's flash."
               alt="Hans's dog Heidi being patted on the head"
-              width={400}
-              height={400}
+              width={450}
+              height={800}
               priority
+              className="w-[450px] h-[800px]"
               />
             </div>
           </div>
