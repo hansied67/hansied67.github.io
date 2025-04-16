@@ -62,6 +62,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Setup IndexNow
+        run: echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -83,9 +86,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-
-      - name: Setup IndexNow
-        run: echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
 
   # Deployment job
   deploy:
