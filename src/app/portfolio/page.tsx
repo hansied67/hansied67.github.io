@@ -5,6 +5,7 @@ import PortfolioEntry from "../components/PortfolioEntry/PortfolioEntry";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hansdurchholz.com"),
   title: "Hans Durchholz - Portfolio",
   description: "Relevant details of my past and ongoing professional backend work, as well as personal full-stack app development projects.",
   generator: "hansdurchholz.com",
@@ -13,6 +14,9 @@ export const metadata: Metadata = {
   keywords: ["Hans Durchholz", "Portfolio", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
+  alternates: {
+    canonical: "./"
+  },
   formatDetection: {
     email: true,
     address: false,

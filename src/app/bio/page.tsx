@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hansdurchholz.com"),
   title: "Hans Durchholz - Bio",
   description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
   generator: "hansdurchholz.com",
@@ -9,6 +10,9 @@ export const metadata: Metadata = {
   keywords: ["Hans Durchholz Bio", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
+  alternates: {
+    canonical: "./"
+  },
   formatDetection: {
     email: true,
     address: false,

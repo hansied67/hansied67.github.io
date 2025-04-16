@@ -6,14 +6,18 @@ import ImageHoverSwap from "./components/ImageHoverSwap/ImageHoverSwap";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hansdurchholz.com"),
   title: "Hans Durchholz - Home",
   description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
-  keywords: ["Hans Durchholz Com", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX", "Website", "Site", "Frog", "Worm String", "Portfolio"],
+  keywords: ["Hans Durchholz", "Hans Durchholz Com", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX", "Website", "Site", "Frog", "Worm String", "Portfolio"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
+  alternates: {
+    canonical: "./"
+  },
   formatDetection: {
     email: true,
     address: false,
