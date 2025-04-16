@@ -31,6 +31,11 @@ export default function SiteNav() {
         setOpen(false);
       }
       else {
+        // wait 5 seconds to open
+        setOpen(false);
+        setTimeout(() => {
+          setOpen(true);
+        }, 5000);
         // timeout after 10 seconds
         setTimeout(() => {
           if (fontPrompt === null) {
