@@ -190,6 +190,7 @@ export default function SiteNav() {
                     ? <Link href={item.href}
                       aria-label={"Open " + item.name}
                       tabIndex={-1}
+                      target={item.name !== "Contact" ? "_self" : "_blank"}
                       className="site-nav text-sm md:text-lg ml-6 p-2 hover:text-amber-500 hover:bg-(--color-background)/50 rounded-lg">
                       {item.name}
                       </Link>
