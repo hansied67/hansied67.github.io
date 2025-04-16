@@ -6,7 +6,18 @@
   --background: #ededed;
   --foreground: #171717;
   --background-image: url("/site-bg-light.png");
+
+  /* --animate-down: wiggle 250ms ease-in-out; */
 }
+
+/* @keyframes wiggle {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+} */
 
 /* Banter & Banter Bold fonts by Chevy Ray: https://chevyray.itch.io/pixel-font-banter */
 /* License: https://raw.githubusercontent.com/ChevyRay/pixel_font_megapack_license/main/LICENSE.txt */
