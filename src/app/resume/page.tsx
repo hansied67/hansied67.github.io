@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hans Durchholz - Resume",
     description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
-    url: "https://hansdurchholz.com/resume",
+    url: "https://hansdurchholz.com/docs/HansDurchholz-Resume.pdf",
     siteName: "hansdurchholz.com",
     images: [
       {
