@@ -113,14 +113,14 @@ export default function Home() {
           <div role="complementary" aria-label="Heidi Dog Pics!!">
             <br role="none" />
             <h3 className="text-center">Please enjoy these lovely pictures of me and my dog Heidi!</h3>
-            <div className="flex flex-col 2xl:flex-row divide-y-2 2xl:divide-x-2 2xldivide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4 items-center">
+            <div className="flex flex-col 2xl:flex-row divide-y-2 2xl:divide-x-2 2xl:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4 items-center">
               <Image
               src="/Heidi1.jpg"
               title="Hans's dog Heidi, a German Shepherd Mix with fawn and brindle fur. She is fast asleep on Hans's bed."
               alt="Hans's dog Heidi sleeping"
               width={450}
               height={800}
-              className="w-[450px] h-[800px]"
+              className="w-[450px] 2xl:h-[800px]"
               />
               <Image
               src="/HeidiHans.jpg"
@@ -128,7 +128,7 @@ export default function Home() {
               alt="Hans & his dog Heidi"
               width={450}
               height={800}
-              className="w-[450px] h-[800px]"
+              className="w-[450px] 2xl:h-[800px]"
               />
               <Image
               src="/Heidi2.jpg"
@@ -137,7 +137,7 @@ export default function Home() {
               width={450}
               height={800}
               priority
-              className="w-[450px] h-[800px]"
+              className="w-[450px] 2xl:h-[800px]"
               />
             </div>
           </div>
