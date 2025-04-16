@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   alternates: {
-    canonical: "./"
+    canonical: "./portfolio"
   },
   formatDetection: {
     email: true,
