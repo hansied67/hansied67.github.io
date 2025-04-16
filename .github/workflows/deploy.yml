@@ -84,6 +84,9 @@ jobs:
         with:
           path: ./out
 
+      - name: Setup IndexNow
+        run: echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
+
   # Deployment job
   deploy:
     environment:
