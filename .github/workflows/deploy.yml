@@ -80,7 +80,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Setup IndexNow
-        run: echo ${{ secrets.INDEXNOW_KEY }} > ./out${{ secrets.INDEXNOW_KEY }}.txt
+        run: echo ${{ secrets.INDEXNOW_KEY }} > ./out/${{ secrets.INDEXNOW_KEY }}.txt
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
