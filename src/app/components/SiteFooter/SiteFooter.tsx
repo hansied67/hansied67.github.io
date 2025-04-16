@@ -40,7 +40,7 @@ export default function SiteFooter() {
   
 
     return(
-        <footer aria-label="Site Footer with Theme Toggles" className="fixed w-full bottom-0 items-stretch backdrop-blur">
+        <footer aria-label="Site Footer with Theme Toggles" className="fixed print:relative w-full bottom-0 items-stretch backdrop-blur">
           <div className="max-w-screen-xl flex mx-auto">
             <ThemeToggle className="flex flex-2 justify-end"/>
             <div role="complementary" aria-label="Site Info" className="flex flex-13 justify-center flex-col text-xs md:text-base">

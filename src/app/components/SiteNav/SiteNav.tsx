@@ -157,7 +157,7 @@ export default function SiteNav() {
     }
 
     return (
-      <header className="fixed w-full z-20 top-0 start-0" aria-label="Site Header">
+      <header className="fixed w-full z-20 top-0 start-0 print:relative" aria-label="Site Header">
         <div className="backdrop-blur bg-opacity-30">
         <a id="skip" className="fixed -translate-y-full focus:translate-y-0 ml-2" href="#main">Skip to Content</a>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
