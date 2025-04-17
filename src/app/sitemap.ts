@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             images: ['https://hansdurchholz.com/PortfolioSC.png', 'https://hansdurchholz.com/PROS%20logo.png', 'https://hansdurchholz.com/GlassBridgeLoginDialogue.png', 'https://hansdurchholz.com/DiceRollerImage.png'],
         },
         {
-            url: "https://hansdurchholz.com/docs/HansDurchholz-Resume.pdf",
+            url: "https://hansdurchholz.com/resume",
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.8,

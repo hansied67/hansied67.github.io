@@ -10,9 +10,6 @@ export const metadata: Metadata = {
   keywords: ["Hans Durchholz Resume", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
-  alternates: {
-    canonical: "./docs/HansDurchholz-Resume.pdf"
-  },
   formatDetection: {
     email: true,
     address: false,
@@ -21,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hans Durchholz - Resume",
     description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
-    url: "https://hansdurchholz.com/docs/HansDurchholz-Resume.pdf",
+    url: "https://hansdurchholz.com/resume",
     siteName: "hansdurchholz.com",
     images: [
       {
