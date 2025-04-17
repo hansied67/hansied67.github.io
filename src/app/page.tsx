@@ -125,7 +125,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div role="complementary" aria-label="Heidi Dog Pics!!">
+          <div role="region" aria-label="Heidi Dog Pics!!">
             <br role="none" />
             <h3 className="text-center">Please enjoy these lovely pictures of me and my dog Heidi!</h3>
             <div className="flex flex-col 2xl:flex-row divide-y-2 2xl:divide-x-2 2xl:divide-y-0 divide-solid divide-[var(--foreground)] border-2 rounded-sm shadow-2xl mt-4 items-center">

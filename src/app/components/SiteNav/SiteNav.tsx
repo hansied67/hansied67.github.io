@@ -161,7 +161,7 @@ export default function SiteNav() {
         <div className="backdrop-blur bg-opacity-30">
         <a id="skip" className="fixed -translate-y-full focus:translate-y-0 ml-2" href="#main">Skip to Content</a>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-            <div role="complementary" aria-label="Banner Title" className="flex flex-1 items-center mx-auto">
+            <div role="region" aria-label="Banner Title" className="flex flex-1 items-center mx-auto">
               <Image
                 className="p-0 md:p-0.5 size-[48px] md:size-[64px]"
                 src="/Bob%20Ross.png"
