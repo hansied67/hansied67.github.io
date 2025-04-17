@@ -30,10 +30,24 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://hansdurchholz.com/PortfolioSC.png",
+        alt: "hansdurchholz.com Portfolio Screenshot",
       },
     ],
     locale: "en_US",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hans Durchholz's Portfolio",
+    description: "Relevant details of my past and ongoing professional backend work, as well as personal full-stack app development projects.",
+    siteId: "1297850698772750336",
+    creatorId: "1297850698772750336",
+    images: [
+      {
+        url: "https://hansdurchholz.com/PortfolioSC.png",
+        alt: "hansdurchholz.com Portfolio Screenshot",
+      },
+    ],
   },
 };
 

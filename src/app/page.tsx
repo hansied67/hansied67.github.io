@@ -7,8 +7,8 @@ import ImageHoverSwap from "./components/ImageHoverSwap/ImageHoverSwap";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hansdurchholz.com"),
-  title: "Hans Durchholz - Home",
-  description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+  title: "Hans Durchholz's Website",
+  description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
@@ -24,17 +24,31 @@ export const metadata: Metadata = {
     telephone: true,
   },
   openGraph: {
-    title: "Hans Durchholz - Home",
-    description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+    title: "Hans Durchholz's Website",
+    description: "Hans Durchholz is full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
     url: "https://hansdurchholz.com",
     siteName: "hansdurchholz.com",
     images: [
       {
         url: "https://hansdurchholz.com/HomeSC.gif",
+        alt: "hansdurchholz.com Home Page Screenshot",
       },
     ],
     locale: "en_US",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hans Durchholz's Website",
+    description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+    siteId: "1297850698772750336",
+    creatorId: "1297850698772750336",
+    images: [
+      {
+        url: "https://hansdurchholz.com/HomeSC.gif",
+        alt: "hansdurchholz.com Home Page Screenshot",
+      },
+    ],
   },
 };
 
@@ -43,9 +57,10 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-0 gap-16 sm:p-20 sm:pb-0">
       <main id="main" className="flex flex-col gap-[32px] row-start-2 items-center scroll-mt-[92px] md:scroll-mt-[76px]">
         <div className="flex flex-col items-center rounded-xl">
-          <h1 className="text-lg md:text-5xl font-bold">
+          <h1 className="sr-only">Hans Durchholz</h1>
+          <h2 className="text-lg md:text-5xl font-bold">
             Hi! Wanna see a frog?
-          </h1>
+          </h2>
           <div className="grid grid-cols-1 justify-items-center">
             <Link
             className="hover:bg-(--color-background)/50 rounded-2xl"

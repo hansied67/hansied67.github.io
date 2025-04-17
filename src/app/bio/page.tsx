@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hansdurchholz.com"),
   title: "Hans Durchholz - Bio",
-  description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
+  description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Hans Durchholz - Bio",
-    description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
+    description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
     url: "https://hansdurchholz.com/bio",
     siteName: "hansdurchholz.com",
     images: [
@@ -31,6 +31,19 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website"
   },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Hans Durchholz's Website",
+  //   description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+  //   siteId: "1297850698772750336",
+  //   creatorId: "1297850698772750336",
+  //   images: [
+  //     {
+  //       url: "https://hansdurchholz.com/HomeSC.gif",
+  //       alt: "hansdurchholz.com Home Page Screenshot",
+  //     },
+  //   ],
+  // },
 };
 
 
