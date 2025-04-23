@@ -14,6 +14,7 @@ export default function SiteNav() {
     const [isFocus, setFocus] = useState(false);
     const navRef = useRef<HTMLDivElement | null>(null);
     const tabRef = useRef<HTMLAnchorElement | null>(null);
+    const alertRef = useRef<HTMLDivElement | null>(null);
 
     const pathname = usePathname();
 
@@ -46,7 +47,7 @@ export default function SiteNav() {
       }
     }, []);
 
-    // WAI-ARIA keyboard navigation
+    // WAI-ARIA keyboard navigation - navigation
     useEffect(() => {
       const navElement = navRef.current as HTMLDivElement | null;
       let tabElement = tabRef.current as HTMLAnchorElement | null;
@@ -77,39 +78,45 @@ export default function SiteNav() {
       }
       const handleInput = (e: KeyboardEvent) => {
         pressedKeys.set(e.code, true);
+        console.log(pressedKeys);
         if (e.code === "ArrowLeft") {
           prevSibling?.focus();
           tabElement = getPrevSibling()
           prevSibling = getPrevSibling();
           nextSibling = getNextSibling();
         }
-        else if(e.code === "ArrowRight") {
-            nextSibling?.focus();
-            tabElement = getNextSibling();
-            prevSibling = getPrevSibling();
-            nextSibling = getNextSibling();
+        else if (e.code === "ArrowRight") {
+          nextSibling?.focus();
+          tabElement = getNextSibling();
+          prevSibling = getPrevSibling();
+          nextSibling = getNextSibling();
         }
-
-        console.log(pressedKeys);
-        if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab") && !isFocus) {
-          console.log("a");
-          navElement?.focus();
+        else if (e.code === "Space") {
+          e.preventDefault();
+          tabElement?.click();
         }
-        else if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab") && isFocus) {
-          console.log("b");
+        // if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab") && !isFocus) {
+        //   console.log("isFocus: " + isFocus);
+        //   setFocus(true);
+        //   navElement?.focus();
+        // }
+        else if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab")) {
+          // TODO: not actually focusing skip.
+          console.log("isFocus: " + isFocus);
+          setFocus(false);
+          e.preventDefault();
           document.getElementById("skip")?.focus();
         }
-
-        if (pressedKeys.get("Tab")) {
-          // TODO: why
-          setFocus(false);
-        }
+        // else if (pressedKeys.get("Tab") && isFocus) {
+        //   setFocus(false);
+        // }
       }
       const removeInput = (e: KeyboardEvent) => {
         pressedKeys.delete(e.code)
       }
 
       const handleFocus = () => {
+        console.log("handleFocus");
         setFocus(true);
         tabElement = tabRef.current as HTMLAnchorElement | null;
         tabElement?.focus();
@@ -117,26 +124,36 @@ export default function SiteNav() {
         nextSibling = getNextSibling();
       }
 
-      const handleBlur = () => {
-        pressedKeys.clear();
-      }
+      // const handleBlur = () => {
+      //   console.log("handleBlur");
+      //   pressedKeys.clear();
+      //   setFocus(false);
+      // }
 
       document?.addEventListener('keyup', removeInput);
       document?.addEventListener('keydown', handleGlobalInput);
       // navElement?.addEventListener('keyup', removeInput);
       navElement?.addEventListener('keydown', handleInput);
       navElement?.addEventListener('focus', handleFocus);
-      navElement?.addEventListener('blur', handleBlur);
+      // navElement?.addEventListener('blur', handleBlur);
 
       return () => {
-        // document?.removeEventListener('keyup', removeInput);
-        // document?.removeEventListener('keydown', handleGlobalInput);
+        document?.removeEventListener('keyup', removeInput);
+        document?.removeEventListener('keydown', handleGlobalInput);
+        // navElement?.removeEventListener('keyup', removeInput);
         navElement?.removeEventListener('keydown', handleInput);
         navElement?.removeEventListener('focus', handleFocus);
-        navElement?.removeEventListener('blur', handleBlur);
-        setFocus(false);
+        // navElement?.removeEventListener('blur', handleBlur);
+        // setFocus(false);
       }
     }, [navItems.length, isFocus])
+
+    // WAI-ARIA keyboard navigation - Alert
+    // https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/examples/alertdialog/#kbd_label
+    useEffect(() => {
+      // make alert focus when displayed
+      // 
+    }, [open]);
 
     // TODO reset cursor, CSS variables
     function fontAlert(decision: string) {
@@ -208,6 +225,7 @@ export default function SiteNav() {
           </div>
         </div>
         <Alert
+        ref={alertRef}
         open={open}
         className="font-serif mx-auto max-w-screen-md"
         aria-label="Change Font Alert"
