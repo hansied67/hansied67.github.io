@@ -77,7 +77,7 @@ export default function SiteFooter() {
                 </Link>
                 &nbsp;
                 <Link
-                href="https://bsky.app/profile/grunchyhands.bsky.social"
+                href="https://bsky.app/profile/hansdurchholz.com"
                 target="_blank">
                   Hans Durchholz
                 </Link>
