@@ -78,7 +78,6 @@ export default function SiteNav() {
       }
       const handleInput = (e: KeyboardEvent) => {
         pressedKeys.set(e.code, true);
-        console.log(pressedKeys);
         if (e.code === "ArrowLeft") {
           prevSibling?.focus();
           tabElement = getPrevSibling()
@@ -101,8 +100,6 @@ export default function SiteNav() {
         //   navElement?.focus();
         // }
         else if (pressedKeys.get("ShiftLeft") && pressedKeys.get("Tab")) {
-          // TODO: not actually focusing skip.
-          console.log("isFocus: " + isFocus);
           setFocus(false);
           e.preventDefault();
           document.getElementById("skip")?.focus();
@@ -116,7 +113,6 @@ export default function SiteNav() {
       }
 
       const handleFocus = () => {
-        console.log("handleFocus");
         setFocus(true);
         tabElement = tabRef.current as HTMLAnchorElement | null;
         tabElement?.focus();
