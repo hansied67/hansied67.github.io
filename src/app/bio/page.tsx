@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
-  keywords: ["Hans Durchholz Bio", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX"],
+  keywords: ["Bio", "Languages", "Frameworks", "SQL", "ReactJS", "C++", "Java", ".NET", "Github", "VSCode", "Accessibility"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   alternates: {
-    canonical: "./bio"
+    canonical: "https://hansdurchholz.com/bio"
   },
   formatDetection: {
     email: true,

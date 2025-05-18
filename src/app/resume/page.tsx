@@ -7,9 +7,12 @@ export const metadata: Metadata = {
   description: "Full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
   generator: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
-  keywords: ["Hans Durchholz Resume", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX"],
+  keywords: ["Hans Durchholz Resume", "MO", "PROS", "Implementation Consultant II", "Github", "VSCode", "SQL", "C", "Python", "Java", "Javascript", "HTML", "ReactJS", "Accessibility", "Communication", "UMSL", "Missouri S&T"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
+  alternates: {
+    canonical: "https://hansdurchholz.com/docs/HansDurchholz-Resume.pdf"
+  },
   formatDetection: {
     email: true,
     address: false,

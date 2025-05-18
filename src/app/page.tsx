@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
-  keywords: ["Hans Durchholz", "Hans Durchholz Com", "hansdurchholz.com", "St. Louis, MO", "Missouri", "Programmer", "Software Developer", "Software Engineer", "Software Engineer", "Implementation Consultant", "Computer Science", "Programming", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX", "Website", "Site", "Frog", "Worm String", "Portfolio"],
+  keywords: ["Hans Durchholz", "hansdurchholz.com", "Heidi", "Frog", "Site", "St. Louis, MO", "Missouri", "Programmer", "Software", "Developer", "Consultant", "Computer Science", "App Development", "Pixel Art", "React", "Next.js", "Tailwind", "TypeScript", "Python", "C++", "Java", "Javascript", "Frontend", "Backend", "SQL", "UX", "Frog", "Worm String", "Portfolio"],
   creator: "Hans Durchholz",
   publisher: "Hans Durchholz",
   alternates: {
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           <div className="text-lg">
             <h2>Thanks for checking out my site!</h2>
-            <p>I&apos;m a full-stack software developer/consultant with a Bachelor&apos;s degree in Computer Science. I have professional experience building and maintaining back-ends in customer-facing agile roles for fortune 500 companies.</p>
+            <p>I&apos;m Hans Durchholz, a full-stack software developer/consultant in Missouri with a Bachelor&apos;s degree in Computer Science. I have professional experience building and maintaining back-ends in customer-facing agile roles for fortune 500 companies.</p>
             <p>I <b>LOVE</b> the connectivity provided by the internet - I think it&apos;s genuinely beautiful. In my free time, I enjoy making tools for gaming communities and collaborating with other developers/artists. I&apos;ve met so many cool people and made so many cool things, all thanks to the World Wide Web!</p>
             <p>
               Learn more in my&nbsp;
