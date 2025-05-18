@@ -8,7 +8,7 @@ import ImageHoverSwap from "./components/ImageHoverSwap/ImageHoverSwap";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hansdurchholz.com"),
   title: "Hans Durchholz's Website",
-  description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+  description: "Hans Durchholz is a full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
   generator: "hansdurchholz.com",
   applicationName: "hansdurchholz.com",
   referrer: "strict-origin-when-cross-origin",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Hans Durchholz's Website",
-    description: "Hans Durchholz is full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience. Check out my portfolio!",
+    description: "Hans Durchholz is full-stack computer science grad, software developer & implementation consultant with professional agile back-end experience.",
     url: "https://hansdurchholz.com",
     siteName: "hansdurchholz.com",
     images: [
